@@ -1,0 +1,286 @@
+
+        :root {
+            /* Өнгөний систем */
+            --color-primary: #ee4b4b;
+            --color-secondary: #4CAF50;
+            --color-background: #ffffff;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --color-border: #dddddd;
+            
+            /* Сүүдэр */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+            
+            /* Spacing систем */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 2rem;
+            --space-xl: 4rem;
+            
+            /* Typography */
+            --font-main: 'Roboto', sans-serif;
+            --font-heading: 'Montserrat', sans-serif;
+            --line-height-body: 1.6;
+            --line-height-heading: 1.3;
+            --letter-spacing: 0.5px;
+        }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-background: #1a1a1a;
+                --color-text: #ffffff;
+                --color-text-light: #cccccc;
+                --color-border: #404040;
+            }
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: var(--line-height-body);
+            letter-spacing: var(--letter-spacing);
+            transition: background-color 0.3s ease;
+        }
+
+        /* Header Styles */
+        .header {
+            padding: var(--space-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            position:relative;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .search-container {
+          grid-column:1/ -1;
+          grid-row:1;
+          justify-self: center;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          z-index: 1;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: var(--space-md);
+            border: 1px solid var(--color-border);
+            border-radius: 2rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: var (--color-background);
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary);
+        }
+
+        /* Main Content */
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--space-lg);
+            max-width: 1200px;
+            margin: var(--space-xl) auto;
+            padding: 0 var(--space-md);
+        }
+
+        .illustration {
+            grid-column: 1 / 7;
+            animation: slideInLeft 0.5s ease-out;
+        }
+
+        .login-section {
+            grid-column: 7 / 13;
+            animation: slideInRight 0.5s ease-out;
+        }
+
+        /* Form Styles */
+        .login-form {
+            background-color: var(--color-background);
+            padding: var(--space-lg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: var(--space-lg);
+            color: var(--color-text);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-md);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-xs);
+            color: var(--color-text-light);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--space-md);
+            border: 1px solid var(--color-border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: var(--space-md);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1c1c1c;
+            padding: var(--space-lg);
+            color: white;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            width: 80px;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+            color: var(--color-primary);
+        }
+
+        .event-button {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        /* Animations */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Media Queries */
+        /* Гар утасны босоо */
+        @media screen and (max-width: 576px) {
+            html {
+                font-size: 14px;
+            }
+
+            .main-container {
+                grid-template-columns: 1fr;
+                gap: var(--space-md);
+            }
+
+            .illustration {
+                grid-column: 1;
+                display: none;
+            }
+
+            .login-section {
+                grid-column: 1;
+                padding: var(--space-md);
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: var(--space-md);
+                text-align: center;
+            }
+        }
+
+        /* Гар утасны хэвтээ */
+        @media screen and (min-width: 577px) and (max-width: 768px) {
+            .main-container {
+                grid-template-columns: repeat(6, 1fr);
+                gap: var(--space-md);
+            }
+
+            .illustration {
+                grid-column: 1 / 4;
+            }
+
+            .login-section {
+                grid-column: 4 / 7;
+            }
+        }
