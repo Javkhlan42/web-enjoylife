@@ -19,50 +19,9 @@ body {
     color: #333;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-}
-
-header a img {
-    border-radius: 50%;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    background-color: #444;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    background-color: #555;
-}
-
-input[type="search"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
 
-/*big photo*/
+/* Banner Styles */
 .banner {
     overflow: hidden;
     padding-bottom: 3.5rem;
