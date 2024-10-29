@@ -43,44 +43,44 @@
             <ul class="All">
                 <li>
                     <a href="#">
-                        <img src="gaming.svg" alt="Game" class="game-icon">
+                        <div><img src="gaming.svg" alt="Game" class="game-icon"></div>
                         <p>Game</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="1176751-200.png" alt="Sport" class="sport-icon">
+                        <div><img src="1176751-200.png" alt="Sport" class="sport-icon"></div>
                         <p>Sport</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="meeting.svg" alt="Meet" class="meet-icon">
+                        <div><img src="meeting.svg" alt="Meet" class="meet-icon"></div>
                         <p>Meeting</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="holiday-leisure.svg" alt="Holiday" class="holiday-icon">
+                        <div><img src="holiday-leisure.svg" alt="Holiday" class="holiday-icon"></div>
                         <p>Holiday</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="food-1.svg" alt="Food" class="food-icon">
+                        <div><img src="food-1.svg" alt="Food" class="food-icon"></div>
                         <p>Food & Drink</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="microphone.svg" alt="Mic" class="circle-icon">
+                        <div><img src="microphone.svg" alt="Mic" class="circle-icon"></div>
                         <p>Music</p>
                     </a>
                 </li>
             </ul>
-            
+
         </nav>
-        
+
         <br><br>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <br>
@@ -89,10 +89,10 @@
         <div class="verticle-line"></div>
         <section class="event-types">
             <h3>Browsing event type</h3>
-            <button>
+            <button class="type">
                 <span><i class="fas fa-laptop"></i> Online</span>
             </button>
-            <button>
+            <button class="type">
                 <span><i class="fas fa-users"></i> Offline</span>
             </button>
         </section>
@@ -113,37 +113,82 @@
                 </div>
             </aside>
 
-            <article class="article">
-                <img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200"
-                    height="100">
-                <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                <p>Saturday ~ 11:00 AM</p>
-                <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                <p>Free</p>
-                <button id="btnh1" class="btn"><i class="fa-regular fa-heart"></i> Love</button>
-            </article>
 
-            <article>
-                <img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200"
-                    height="100">
-                <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                <p>Saturday ~ 11:00 AM</p>
-                <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                <p>Free</p>
-                <button id="btnh1" class="btn"><i class="fa-regular fa-heart"></i> Love</button>
-            </article>
+            <section class="article">
+                <!-- Product 1 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
+                        <p>Saturday ~ 11:00 AM</p>
+                        <p>Улаанбаатар хот Хан-Уул 3 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-1" />
+                            <label class="container" for="like-toggle-1">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Product 2 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/2/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 7 et 8 Octobre 2024</h3>
+                        <p>Sunday ~ 11:00 AM</p>
+                        <p>Улаанбаатар хот Баянзүрх 10 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-2" />
+                            <label class="container" for="like-toggle-2">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- Product 3 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/3/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 9 et 10 Octobre 2024</h3>
+                        <p>Monday ~ 10:00 AM</p>
+                        <p>Улаанбаатар хот Сүхбаатар 5 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-3" />
+                            <label class="container" for="like-toggle-3">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
 
-            <article>
-                <img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200"
-                    height="100">
-                <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                <p>Saturday ~ 11:00 AM</p>
-                <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                <p>Free</p>
-                <button id="btnh1" class="btn"><i class="fa-regular fa-heart"></i> Love</button>
-            </article>
+
+                <!-- Product 4 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/3/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 9 et 10 Octobre 2024</h3>
+                        <p>Monday ~ 10:00 AM</p>
+                        <p>Улаанбаатар хот Сүхбаатар 5 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-4" />
+                            <label class="container" for="like-toggle-4">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
         </section>
     </main>
+
+
 
 </body>
 
