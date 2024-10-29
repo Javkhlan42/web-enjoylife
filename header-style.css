@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+/* background-color: rgba(0, 0, 0, 0.7); */
+  font-style: normal;
+}
+.banner{
+    Background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(banner.jpg);
+    /* background-image: url(banner.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner h2{
+    font-size: 3.15rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    
+/* background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)); */
+    top: 10;
+    left: 0;
+    padding: 1.3rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.header::before{
+    top: 0;
+  
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(50px);
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.logo{
+    font-size:2rem ;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+#checkbox{
+    display: none;
+}
+.navbar ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+  
+
+}
+.login ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+.login ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+  
+
+}
+ .login ul li i{
+  color: #fff;
+}
+.login ul li a{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 500;
+}
+.navbar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+.navbar ul li i{
+  color: #fff;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 500;
+}
+.icons {
+    font-size: 2.2rem;
+    color: #fff;
+    position: absolute ;
+    cursor: pointer;
+    right: 5%;
+    display: none;
+}
+ @media (max-width:992px) {
+    .header{
+    padding: 1.3rem 5%;
+
+    }
+}
+@media (max-width:992px) {
+ .icons{
+    display: inline-flex;
+ }
+ .icons #close-icon{
+    display: none;
+ }
+#checkbox:checked~.icons #menu-icon{
+    display: none;
+}
+#checkbox:checked~.icons #close-icon{
+    display: block;
+}
+#checkbox:checked~.navbar{
+height: 18rem;
+}
+ .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s linear;
+    overflow: hidden;
+ }
+ .navbar ul  {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+
+ }
+ .navbar ul li{
+    margin: 1.5rem 0rem;
+ }
+ .navbar ul li i  {
+    display: none;
+  
+ }
+ .login  {
+    font-size: 2.2rem;
+    color: #fff;
+    position: absolute ;
+    cursor: pointer;
+    /* right: 14%; */
+    /* display: none; */
+} 
+ .login ul li  {
+margin-left: 10px;
+ 
+}
+.login ul li a {
+  display: none;
+     
+    }
+    .logo{
+        font-size:1.5rem ;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .header i{
+        font-size: 18px;
+    }
+
+    .search{
+        --padding: 10px;
+        width: 100%;
+        /* width: max-content; */
+        display: flex;
+        align-items: center;
+        padding: var(--padding);
+        border-radius: 28px;
+        background: #f6f6f6;
+        transition: background 0.25s;
+    }
+    
+    .search:focus-within{
+        background: #f1f1f1;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    }
+    .search-input{
+        font-size: 16px;
+        font-family: 'Lexend', sans-serif;
+        color: #333333;
+        margin-left: var(--padding);
+        outline: none;
+        border: none;
+        background: transparent;
+        width: 300px;
+    }
+
+}
+
+.search{
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: background 0.25s;
+}
+
+.search:focus-within{
+    background: #f1f1f1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+}
+.search-input{
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+
+.search-input::placeholder,
+.search-icon{
+    color: rgba(0, 0, 0, 0.25);
+}
+
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 6px;
+  left: 36px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+/* .switch:hover */.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+ 
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .switch:hover */.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+ 
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked + .slider {
+  background-color: #183153;
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(30px);
+}

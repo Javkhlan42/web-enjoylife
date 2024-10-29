@@ -6,85 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div>
-            <a href="#"><img src="logo.PNG" alt="Website Logo" width="40" height="40"></a>
+<body>  
+    <header class="header">
+        <a href="#" class="logo">
+Enjoy Life
+        </a>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+        <form>
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input class="search-input" type="search" placeholder="Search">
+            </div>
+        </form>
+        <nav class="navbar">
+           <ul>
+            <li><i class="fa-solid fa-house"></i>
+                <a href="#" class="menu-item">Home</a>
+            </li>
+            <li><i class="fa-solid fa-plus"></i>
+                <a href="#" class="menu-item">Create an event</a>
+
+            </li>
+            <li><i class="fa-solid fa-heart"></i>
+                <a href="#" class="menu-item">Likes</a>
+            </li>
+        </ul>
+        </nav>
+        <div class="login">
+            <ul>
+                <li>
+                    <label class="switch">
+                        <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                        <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                        <input type="checkbox" class="input">
+                        <span class="slider"></span>
+                      </label>
+                </li>
+                <li><i class="fa-regular fa-user"></i>
+                    <a href="#" class="menu-item">Loggin</a>
+                </li>
+            </ul>
         </div>
-        <input type="search" aria-label="Search events" placeholder="Search events...">
-
-        <nav>
-            <ul>
-                <li><a href="#">Create Event</a></li>
-                <li><a href="#">Likes and Joined</a></li>
-                <li><a href="#">Toggle Dark Mode</a></li>
-            </ul>
-        </nav>
-
-        <nav>
-            <a href="#" aria-label="User Account">Gmail.com</a>
-            <ul>
-                <li><a href="User.html">User Profile</a></li>
-                <li><a href="#">Account Settings</a></li>
-                <li><a href="login.html">Log Out</a></li>
-            </ul>
-        </nav>
     </header>
-
+    <section class="banner">
+        <h2>Манай хуудаст тавтай морил</h2>
+            </section>
     <main>
-        <div class="banner">
-            <img src="nuur.jpg" alt="Beautiful Landscape" class="banner-zurag">
-        </div>
 
         <nav aria-label="Event Categories">
-            <ul>
-
-                <li class="Game">
+            <ul class="All">
+                <li>
                     <a href="#">
-                        <div class="game"><img src="gaming.svg" alt="Game" class="game-icon"></div>
-                        <p class="gam">Game</p>
+                        <div><img src="gaming.svg" alt="Game" class="game-icon"></div>
+                        <p>Game</p>
                     </a>
                 </li>
-
-                <li class="Sport">
+                <li>
                     <a href="#">
-                        <div class="sport"><img src="1176751-200.png" alt="Sport" class="sport-icon"></div>
-                        <p class="spor">Sport</p>
+                        <div><img src="1176751-200.png" alt="Sport" class="sport-icon"></div>
+                        <p>Sport</p>
                     </a>
                 </li>
-
-                <li class="Meet">
+                <li>
                     <a href="#">
-                        <div class="meet"><img src="meeting.svg" alt="Meet" class="meet-icon"></div>
-                        <p class="met">Meeting</p>
+                        <div><img src="meeting.svg" alt="Meet" class="meet-icon"></div>
+                        <p>Meeting</p>
                     </a>
                 </li>
-
-                <li class="Holiday">
+                <li>
                     <a href="#">
-                        <div class="holiday"><img src="holiday-leisure.svg" alt="Holiday" class="holiday-icon"></div>
-                        <p class="hol">Holiday</p>
+                        <div><img src="holiday-leisure.svg" alt="Holiday" class="holiday-icon"></div>
+                        <p>Holiday</p>
                     </a>
                 </li>
-
-                <li class="Food">
+                <li>
                     <a href="#">
-                        <div class="food"><img src="food-1.svg" alt="Food " class="food-icon"></div>
-                        <p class="dir">Food & Drink</p>
+                        <div><img src="food-1.svg" alt="Food" class="food-icon"></div>
+                        <p>Food & Drink</p>
                     </a>
                 </li>
-
-                <li class="Circle">
+                <li>
                     <a href="#">
-                        <div class="circle"><img src="microphone.svg" alt="Mic " class="circle-icon"></div>
-                        <p class="music">Music</p>
+                        <div><img src="microphone.svg" alt="Mic" class="circle-icon"></div>
+                        <p>Music</p>
                     </a>
                 </li>
-
             </ul>
+
         </nav>
+
         <br><br>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <br>
@@ -93,18 +120,18 @@
         <div class="verticle-line"></div>
         <section class="event-types">
             <h3>Browsing event type</h3>
-            <button>
+            <button class="type">
                 <span><i class="fas fa-laptop"></i> Online</span>
             </button>
-            <button>
+            <button class="type">
                 <span><i class="fas fa-users"></i> Offline</span>
             </button>
         </section>
         <div class="verticle-line"></div>
-        
-        
 
-        
+
+
+
 
         <section>
             <aside class="filter">
@@ -117,37 +144,82 @@
                 </div>
             </aside>
 
-            <article class="article">
-                <img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200"
-                    height="100">
-                <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                <p>Saturday ~ 11:00 AM</p>
-                <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                <p>Free</p>
-                <button id="btnh1" class="btn"><i class="fa-regular fa-heart"></i> Love</button>
-            </article>
 
-            <article>
-                <img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200"
-                    height="100">
-                <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                <p>Saturday ~ 11:00 AM</p>
-                <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                <p>Free</p>
-                <button id="btnh1" class="btn"><i class="fa-regular fa-heart"></i> Love</button>
-            </article>
+            <section class="article">
+                <!-- Product 1 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
+                        <p>Saturday ~ 11:00 AM</p>
+                        <p>Улаанбаатар хот Хан-Уул 3 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-1" />
+                            <label class="container" for="like-toggle-1">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Product 2 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/2/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 7 et 8 Octobre 2024</h3>
+                        <p>Sunday ~ 11:00 AM</p>
+                        <p>Улаанбаатар хот Баянзүрх 10 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-2" />
+                            <label class="container" for="like-toggle-2">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- Product 3 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/3/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 9 et 10 Octobre 2024</h3>
+                        <p>Monday ~ 10:00 AM</p>
+                        <p>Улаанбаатар хот Сүхбаатар 5 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-3" />
+                            <label class="container" for="like-toggle-3">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
 
-            <article>
-                <img src="https://picsum.photos/id/1/200/200" alt="Event Image for Pop-up Createurs" width="200"
-                    height="100">
-                <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                <p>Saturday ~ 11:00 AM</p>
-                <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                <p>Free</p>
-                <button id="btnh1" class="btn"><i class="fa-regular fa-heart"></i> Love</button>
-            </article>
+
+                <!-- Product 4 -->
+                <article class="cart">
+                    <a href="####"><img src="https://picsum.photos/id/3/200/200" alt="Event Image for Pop-up Createurs" width="200" height="100"></a>
+                    <div class="cart-content">
+                        <h3>Pop-up Createurs 9 et 10 Octobre 2024</h3>
+                        <p>Monday ~ 10:00 AM</p>
+                        <p>Улаанбаатар хот Сүхбаатар 5 байр</p>
+                        <div class="like-wrapper">
+                            <input class="check" type="checkbox" id="like-toggle-4" />
+                            <label class="container" for="like-toggle-4">
+                                <i class="fa-regular fa-heart icon inactive"></i>
+                                <i class="fa-solid fa-heart icon active"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
         </section>
     </main>
+
+
 
 </body>
 

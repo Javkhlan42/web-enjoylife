@@ -1,3 +1,12 @@
+:root {
+    --icon-size: 6rem;
+    --icon-inner-size: 2.2rem;
+    --size50: 50%;
+    --size20: 1.25rem;
+    --size5: 0.3rem;
+    --header-padding: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,64 +19,22 @@ body {
     color: #333;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-}
-
-header a img {
-    border-radius: 50%;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    background-color: #444;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    background-color: #555;
-}
-
-input[type="search"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
 
-/*big photo*/
+/* Banner Styles */
 .banner {
-    overflow: hidden; /* Hide any overflow content */
-    padding-bottom: 55px;
+    overflow: hidden;
+    padding-bottom: 3.5rem;
     background-size: cover;
 }
 
 .banner-zurag {
-    width: 100%; /* Set image width to fill the banner */
-    height: 400px; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below the image */
+    width: 100%;
+    height: 400px;
+    display: block;
 }
 
-
-/*header down*/
+/* Navigation for categories */
 nav ul {
     list-style: none;
     display: flex;
@@ -78,418 +45,64 @@ nav ul li {
     text-align: center;
 }
 
-
-
-/*Game*/
-.Game {
-    list-style: none; /* Remove bullet points */
+/* Game - All Categories */
+.All {
+    list-style: none;
 }
 
-/* Style for the link inside the <li> */
-.Game a {
+.All li a {
     display: flex;
-    flex-direction: column; /* Stack the circle and text vertically */
-    align-items: center; /* Center both icon and text */
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the link */
-.Game a:hover {
-    color: #20139b; /* Change text color on hover */
-}
-
-/* Style for the circle div wrapping the icon */
-.game {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Makes the div circular */
-    background-color: #eceeff; /* Light circle background */
-    border: 0.5px solid black; /* Light black border */
-    transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Hover effect for the circle background */
-.Game a:hover .game {
-    background-color: #cdd2f8; /* Change circle background on hover */
-}
-
-/* Style for the icon inside the circle */
-.game-icon {
-    width: 35px; /* Icon size */
-    height: 35px;
-    transition: filter 0.3s ease; /* Smooth transition on hover */
-}
-
-/* Hover effect for the icon color */
-.Game a:hover .game-icon {
-    filter: hue-rotate(180deg); /* Change icon color on hover */
-}
-
-/* Style for the text below the circle */
-.gam {
-    margin-top: 10px; /* Space between the icon and text */
-    font-size: 15px;
-    color: black;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the text */
-.Game a:hover .gam {
-    color: #20139b; /* Change text color on hover */
-}
-
-
-
-
-
-/*sport*/
-.Sport {
-    list-style: none; /* Remove bullet points */
-}
-
-/* Style for the link inside the <li> */
-.Sport a {
-    display: flex;
-    flex-direction: column; /* Stack the circle and text vertically */
-    align-items: center; /* Center both icon and text */
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the link */
-.Sport a:hover {
-    color: #20139b; /* Change text color on hover */
-}
-
-/* Style for the circle div wrapping the icon */
-.sport {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Makes the div circular */
-    background-color: #eceeff; /* Light circle background */
-    border: 0.5px solid black; /* Light black border */
-    transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Hover effect for the circle background */
-.Sport a:hover .sport {
-    background-color: #cdd2f8; /* Change circle background on hover */
-}
-
-/* Style for the icon inside the circle */
-.sport-icon {
-    width: 35px; /* Icon size */
-    height: 35px;
-    transition: filter 0.3s ease; /* Smooth transition on hover */
-}
-
-/* Hover effect for the icon color */
-.Sport a:hover .sport-icon {
-    filter: hue-rotate(180deg); /* Change icon color on hover */
-}
-
-/* Style for the text below the circle */
-.spor {
-    margin-top: 10px; /* Space between the icon and text */
-    font-size: 15px;
-    color: black;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the text */
-.Sport a:hover .spor {
-    color: #20139b; /* Change text color on hover */
-}
-
-
-
-
-/*meeting*/
-/* Apply styles to the 'Food' class (the <li> element) */
-.Meet {
-    list-style: none; /* Remove bullet points */
-}
-
-/* Style for the link inside the <li> */
-.Meet a {
-    display: flex;
-    flex-direction: column; /* Stack the circle and text vertically */
-    align-items: center; /* Center both icon and text */
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the link */
-.Meet a:hover {
-    color: #20139b; /* Change text color on hover */
-}
-
-/* Style for the circle div wrapping the icon */
-.meet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Makes the div circular */
-    background-color: #eceeff; /* Light circle background */
-    border: 0.5px solid black; /* Light black border */
-    transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Hover effect for the circle background */
-.Meet a:hover .meet {
-    background-color: #cdd2f8; /* Change circle background on hover */
-}
-
-/* Style for the icon inside the circle */
-.meet-icon {
-    width: 35px; /* Icon size */
-    height: 35px;
-    transition: filter 0.3s ease; /* Smooth transition on hover */
-}
-
-/* Hover effect for the icon color */
-.Meet a:hover .meet-icon {
-    filter: hue-rotate(180deg); /* Change icon color on hover */
-}
-
-/* Style for the text below the circle */
-.met {
-    margin-top: 10px; /* Space between the icon and text */
-    font-size: 15px;
-    color: black;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the text */
-.Meet a:hover .met {
-    color: #20139b; /* Change text color on hover */
-}
-
-
-
-/*holiday*/
-/* Apply styles to the 'Food' class (the <li> element) */
-.Holiday {
-    list-style: none; /* Remove bullet points */
-}
-
-/* Style for the link inside the <li> */
-.Holiday a {
-    display: flex;
-    flex-direction: column; /* Stack the circle and text vertically */
-    align-items: center; /* Center both icon and text */
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the link */
-.Holiday a:hover {
-    color: #20139b; /* Change text color on hover */
-}
-
-/* Style for the circle div wrapping the icon */
-.holiday {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Makes the div circular */
-    background-color: #eceeff; /* Light circle background */
-    border: 0.5px solid black; /* Light black border */
-    transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Hover effect for the circle background */
-.Holiday a:hover .holiday {
-    background-color: #cdd2f8; /* Change circle background on hover */
-}
-
-/* Style for the icon inside the circle */
-.holiday-icon {
-    width: 35px; /* Icon size */
-    height: 35px;
-    transition: filter 0.3s ease; /* Smooth transition on hover */
-}
-
-/* Hover effect for the icon color */
-.Holiday a:hover .holiday-icon {
-    filter: hue-rotate(180deg); /* Change icon color on hover */
-}
-
-/* Style for the text below the circle */
-.hol {
-    margin-top: 10px; /* Space between the icon and text */
-    font-size: 15px;
-    color: black;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the text */
-.Holiday a:hover .hol {
-    color: #20139b; /* Change text color on hover */
-}
-
-
-
-
-
-/*food*/
-/* Apply styles to the 'Food' class (the <li> element) */
-.Food {
-    list-style: none; /* Remove bullet points */
-}
-
-/* Style for the link inside the <li> */
-.Food a {
-    display: flex;
-    flex-direction: column; /* Stack the circle and text vertically */
-    align-items: center; /* Center both icon and text */
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the link */
-.Food a:hover {
-    color: #20139b; /* Change text color on hover */
-}
-
-/* Style for the circle div wrapping the icon */
-.food {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Makes the div circular */
-    background-color: #eceeff; /* Light circle background */
-    border: 0.5px solid black; /* Light black border */
-    transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Hover effect for the circle background */
-.Food a:hover .food {
-    background-color: #cdd2f8; /* Change circle background on hover */
-}
-
-/* Style for the icon inside the circle */
-.food-icon {
-    width: 35px; /* Icon size */
-    height: 35px;
-    transition: filter 0.3s ease; /* Smooth transition on hover */
-}
-
-/* Hover effect for the icon color */
-.Food a:hover .food-icon {
-    filter: hue-rotate(180deg); /* Change icon color on hover */
-}
-
-/* Style for the text below the circle */
-.dir {
-    margin-top: 10px; /* Space between the icon and text */
-    font-size: 15px;
-    color: black;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect for the text */
-.Food a:hover .dir {
-    color: #20139b; /* Change text color on hover */
-}
-
-
-
-
-
-
-/*circle*/
-/* Apply styles to the 'Circle' class (the <li> element) */
-.Circle {
-    list-style: none; /* Remove bullet points */
-}
-
-/* Style for the link inside the <li> */
-.Circle a {
-    display: flex;
-    flex-direction: column; /* Stack the circle and text vertically */
-    align-items: center; /* Center both icon and text */
     text-decoration: none;
     color: black;
     font-family: sans-serif;
     transition: color 0.3s ease;
 }
 
-/* Hover effect for the link */
-.Circle a:hover {
-    color: #20139b; /* Change text color on hover */
+.All li a:hover {
+    color: #20139b;
 }
 
-/* Style for the circle div wrapping the icon */
-.circle {
+.All li a div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: var(--icon-size);
+    height: var(--icon-size);
     border-radius: 50%;
-    background-color: #eceeff; /* Light circle background */
-    border: 0.5px solid black; /* Light black border */
+    background-color: #eceeff;
+    border: 0.5px solid black;
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for the circle background */
-.Circle a:hover .circle {
-    background-color: #cdd2f8; /* Change circle background on hover */
+.All li a:hover div {
+    background-color: #cdd2f8;
 }
 
-/* Style for the icon inside the circle */
-.circle-icon {
-    width: 35px; /* Icon size */
-    height: 35px;
-    transition: filter 0.3s ease; /* Smooth transition on hover */
+.All li a div img {
+    width: var(--icon-inner-size);
+    height: var(--icon-inner-size);
+    transition: filter 0.3s ease;
 }
 
-/* Hover effect for the icon color */
-.Circle a:hover .circle-icon {
-    filter: hue-rotate(180deg); /* Change icon color on hover */
+.All li a:hover div img {
+    filter: hue-rotate(180deg);
 }
 
-/* Style for the text below the circle */
-.music {
-    margin-top: 10px; /* Space between the icon and text */
-    font-size: 15px;
+.All li a p {
+    margin-top: 0.6rem;
+    font-size: 1rem;
     color: black;
     transition: color 0.3s ease;
 }
 
-/* Hover effect for the text */
-.Circle a:hover .music {
-    color: #20139b; /* Change text color on hover */
+.All li a:hover p {
+    color: #20139b;
 }
 
-
-/*browsing event types*/
-/* Provided CSS */
-button {
+/* Event Type Buttons */
+.type {
     outline: none;
     cursor: pointer;
     border: none;
@@ -501,14 +114,14 @@ button {
     display: inline-block;
     letter-spacing: 0.05rem;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.05rem;
     border-radius: 500px;
     overflow: hidden;
     background: #cdd2f8;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
-button span {
+.type span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
@@ -517,12 +130,12 @@ button span {
     gap: 10px;
 }
 
-button:hover span {
+.type:hover span {
     color: black;
 }
 
-button::before,
-button::after {
+.type::before,
+.type::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -531,7 +144,7 @@ button::after {
     z-index: 0;
 }
 
-button::before {
+.type::before {
     content: "";
     background: #ffffff;
     width: 120%;
@@ -540,49 +153,168 @@ button::before {
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
-button:hover::before {
+.type:hover::before {
     transform: translate3d(100%, 0, 0);
 }
 
-/* Additional CSS for section and icons */
+/* Event Types Section */
 .event-types {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 20px;
 }
 
 .event-types h3 {
-    font-size: 24px;
-    margin-right: 20px;
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
     color: #000000;
     font-weight: bold;
 }
 
-button i {
-    font-size: 20px;
+.type i {
+    font-size: 1.25rem;
 }
 
-/*line*/
-.verticle-line{
+/* Horizontal Line */
+.verticle-line {
     width: auto;
-    height: 0.8px;
-    background-color:silver;
+    height: 0.05rem;
+    background-color: silver;
 }
 
-/*checkbox...............................................*/
+/* Filter Section Styles */
 .filter {
-    border:1px solid black;
-    height: 200px;
-     
+    padding: 1rem;
+    width: 200px;
+    font-family: Arial, sans-serif;
 }
 
+.filter h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
+.date-filter label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
 
+.date-filter input[type="checkbox"] {
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
 
+/* Product Card Styles */
+.article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
 
+.cart {
+    width: 250px;
+    height: 350px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
 
+.cart a img {
+    width: 100%;
+    height: 50%;
+}
 
+.cart-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
 
+.cart-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: 10px;
+}
 
+/* Love Button */
+.like-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9em;
+    cursor: pointer;
+}
+
+.check[type="checkbox"] {
+    display: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease-in-out;
+    color: #666;
+}
+
+.icon.inactive {
+    display: inline-block;
+}
+
+.icon.active {
+    display: none;
+    color: #f52121;
+}
+
+.check[type="checkbox"]:checked + .container .icon.inactive {
+    display: none;
+}
+
+.check[type="checkbox"]:checked + .container .icon.active {
+    display: inline-block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .event-types {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
