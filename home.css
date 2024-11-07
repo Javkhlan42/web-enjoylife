@@ -1,10 +1,15 @@
 :root {
+    --back-r:8px;   
+    --button-h:50px;
+    --grid-size:1fr;
     --icon-size: 6rem;
     --icon-inner-size: 2.2rem;
     --size50: 50%;
     --size20: 1.25rem;
     --size5: 0.3rem;
     --header-padding: 1rem;
+    --ten:10px;
+    --sticky:7rem
 }
 
 * {
@@ -15,7 +20,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #fefefe;
     color: #333;
 }
 
@@ -47,6 +52,8 @@ nav ul li {
 
 /* Game - All Categories */
 .All {
+    padding-top: 3.3rem;
+    padding-bottom: 3rem;
     list-style: none;
 }
 
@@ -112,11 +119,11 @@ nav ul li {
     font-size: inherit;
     position: relative;
     display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
+    letter-spacing: 0.05rem; /*useg hoorondiin zaig ihesgeh*/
+    font-weight: 700; /*usgiin font ihesgej usgiig iluu tod haragduulan*/
     font-size: 1.05rem;
     border-radius: 500px;
-    overflow: hidden;
+    overflow: hidden;  /*durwuljin hureenees iluu garsaniig nuun*/
     background: #cdd2f8;
     color: black;
 }
@@ -127,7 +134,7 @@ nav ul li {
     transition: color 0.4s;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /*hoorondiin zai*/
 }
 
 .type:hover span {
@@ -149,12 +156,12 @@ nav ul li {
     background: #ffffff;
     width: 120%;
     left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    transform: skew(30deg);  /*tashuu baidlaar gargah 30 gradus gesen ug*/
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1); /*udaanaar ussaj garch ireh*/
 }
 
 .type:hover::before {
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0%, 0);
 }
 
 /* Event Types Section */
@@ -177,18 +184,42 @@ nav ul li {
     font-size: 1.25rem;
 }
 
-/* Horizontal Line */
+/* Selected state style using :checked */
+/* Сонгосон үед */
+input[type="radio"]:checked + span {
+    background: #6a7bf1; /* Сонгосон үед цэнхэр өнгөтэй болно */
+    color: white;
+    border-radius: 500px;
+    padding: 0.9rem 2rem;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+/*..........................................................................*/
+
+/* Horizontal Line   engiin zuraas*/
 .verticle-line {
     width: auto;
     height: 0.05rem;
     background-color: silver;
 }
 
-/* Filter Section Styles */
-.filter {
-    padding: 1rem;
-    width: 200px;
+
+
+/* Filter Section Styles   songoltiin turul sar udur.. */
+.filter {   
+    padding:1rem;
+    width: auto;
+    height: 200px;
     font-family: Arial, sans-serif;
+    position: sticky;   /*delgetsee hadgalah*/
+    top: var(--sticky); /*stucky start line*/
 }
 
 .filter h3 {
@@ -212,70 +243,72 @@ nav ul li {
     height: 1rem;
 }
 
+
+
+/*event check songolt bolon baraanii display*/
+.body-1{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    /* gap: 0% var(--icon-size); */
+    margin-top: var(--header-padding);
+    margin-right: var(--ten);
+}
+
+
+
 /* Product Card Styles */
-.article {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
+.baraanuud {
+    display: grid;
+    padding-left: var(--ten);
+    grid-template-columns: var(--grid-size) var(--grid-size) var(--grid-size) var(--grid-size);
+    gap: var(--button-h) var(--ten); /* var muriin zai , ten ni Багануудын хоорондын зай */
+    width: 100%; /* Эцэг элементэд тохируулсан өргөн */
+    margin-top: 100px;  /* zuwhun baraag deerees zai awah*/
 }
 
-.cart {
-    width: 250px;
-    height: 350px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+.event-card{
+    max-width: 250px; /* Өргөнд дээд хэмжээ тогтоох */
+    height: auto;
+    background-color: #fefefe;
+    border-radius: var(--back-r); /*baraanii durwuljin irmeggui bolgoh*/
+    overflow:hidden; /*border-radius tai hamt hereglewel zohistoi ba zuragnii iluu hesgiig nuuj, iluu tsewehen haragduuldag*/
+    transition: 0.4s;  
 }
 
-.cart a img {
-    width: 100%;
-    height: 50%;
+.event-card:hover{
+    cursor:pointer;
+    box-shadow: 5px 5px 10px rgba(1, 0, 0, 0.4);
+    transition: 0.4s;
 }
 
-.cart-content h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
+.event-card img{
+    width:100%;
+    height: 40%;
 }
 
-.cart-content p {
-    color: #666;
-    font-size: 15px;
-    line-height: 1.3;
-    margin-top: 10px;
-}
+
 
 /* Love Button */
-.like-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.9em;
+.Love{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding-right: 15px;
     cursor: pointer;
 }
 
 .check[type="checkbox"] {
-    display: none;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
+    display: none; /*checkbox durwuljin nudiig haragduulahgui bolon*/
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
-    transition: opacity 0.3s ease-in-out;
-    color: #666;
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease-in-out /*easein ni ehende udaan tugsgulruuge hurdan boloh*/;
+    color: #666; /*icon zurhnii huree ni saaral*/
 }
 
 .icon.inactive {
-    display: inline-block;
+    display: inline-block;/*neg murund bairluulah hujuu tald ni zeregtsee*/
 }
 
 .icon.active {
@@ -283,12 +316,12 @@ nav ul li {
     color: #f52121;
 }
 
-.check[type="checkbox"]:checked + .container .icon.inactive {
-    display: none;
+.check[type="checkbox"]:checked + .container .icon.inactive {  /*check darwal container dotor icon songono(icon.inactive songojiga)  */
+    display: none; /*none ni icon.inactive dusaiig haruulahgui bolgojiga*/
 }
 
-.check[type="checkbox"]:checked + .container .icon.active {
-    display: inline-block;
+.check[type="checkbox"]:checked + .container .icon.active { /*click hiih buyu check deer darsan tohioldold .container roos .icon.active ruu shiljuuleh*/
+    display: inline-block;  /*ene ni 2 neg murund bairluulah ba , baihgui bol check darwal shine murund shiljin*/ 
 }
 
 /* Mobile Responsiveness */
