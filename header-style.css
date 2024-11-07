@@ -34,13 +34,13 @@ body{
     text-align: center;
 }
 .header{
-    width: 100%;
+    width:100%;
     position: fixed;
     
 /* background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)); */
     top: 10;
     left: 0;
-    padding: 1.3rem 6%;
+    padding: 0.6rem 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
