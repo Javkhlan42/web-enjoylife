@@ -1,6 +1,5 @@
 
         :root {
-            /* Өнгөний систем */
             --color-primary: #ee4b4b;
             --color-secondary: #4CAF50;
             --color-background: #ffffff;
@@ -8,19 +7,17 @@
             --color-text-light: #666666;
             --color-border: #dddddd;
             
-            /* Сүүдэр */
             --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
             --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
             --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-            
-            /* Spacing систем */
+         
             --space-xs: 0.25rem;
             --space-sm: 0.5rem;
             --space-md: 1rem;
             --space-lg: 2rem;
             --space-xl: 4rem;
             
-            /* Typography */
+
             --font-main: 'Roboto', sans-serif;
             --font-heading: 'Montserrat', sans-serif;
             --line-height-body: 1.6;
@@ -28,7 +25,6 @@
             --letter-spacing: 0.5px;
         }
 
-        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -49,8 +45,6 @@
 
         }
 
-
-        /* Main Content */
         .main-container {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -70,7 +64,7 @@
             animation: slideInRight 0.5s ease-out;
         }
 
-        /* Form Styles */
+    
         .login-form {
             background-color: var(--color-background);
             padding: var(--space-lg);
@@ -113,7 +107,7 @@
         .btn-login {
             width: 100%;
             padding: var(--space-md);
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            background: linear-gradient(to right, #ff00ff, #007bff);
             color: white;
             border: none;
             border-radius: 0.5rem;
@@ -144,7 +138,6 @@
         }
 
         .footer-logo {
-    
             width: 80px;
         }
 
