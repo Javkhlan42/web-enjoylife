@@ -109,23 +109,23 @@ input,select,textarea{
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  border: 2px solid #95a0ff;
-  border-radius: 30px;
+  border: 1px solid var(--color-text);
+  border-radius: 20px;
   cursor: pointer;
-  color: #95a0ff;
+  color:#333;
   transition: all 0.3s ease;
 }
 
 .select-type_btn.active {
-  background-color: #95a0ff;
+  background-color: #ffffff;
   color: #333333;
 }
 
 .circle {
   width: 14px;
   height: 14px;
-  border-radius: 50%;
-  border: 2px #333333;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-text);
   margin-right: 10px;
   display: flex;
   align-items: center;
@@ -133,7 +133,7 @@ input,select,textarea{
 }
 
 .select-type_btn.active .circle {
-  background-color: #333333;
+  background-color: #95a0ff;
 }
 
 button {
