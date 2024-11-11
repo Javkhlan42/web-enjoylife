@@ -54,7 +54,7 @@
                       </label>
                 </li>
                 <li><i class="fa-regular fa-user"></i>
-                    <a href="#" class="menu-item">Loggin</a>
+                    <a href="#" class="menu-item">Log In</a>
                 </li>
             </ul>
         </div>
@@ -65,24 +65,33 @@
         <section class="section">
             <h1>Create an Event</h1>
             <form>
-                <div>
-                    <label for="photo-upload">Upload a photo or video</label>
-                    <input type="file" id="photo-upload" accept="image/*,video/*">
+                <div class="upload-container">
+                    <div class="upload-content">
+                        <div class="upload-icon">
+                            📷
+                        </div>
+                        <label for="file-upload" class="upload-button">Upload a photo or video</label>
+                        <input type="file" id="file-upload" accept="image/*,video/*" style="display: none;">
+                    </div>
                 </div>
                 <div>
                     <label for="event-title">Event title</label>
                     <input type="text" id="event-title" required>
                 </div>
-                <div>
-                    <label id="location-toggle-label">Event Type</label>
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="location-toggle">
-                        <span class="toggle-slider"></span>
-                    </div>
-                    <span>Offline</span>
-                    <span>Online</span>
+                <div class="Location">
+                    <p>Location</p>
                 </div>
-                <div>
+                <div class="location-btn">
+                    <div class="select-type_btn active">
+                        <div class="circle"></div>
+                        <p>Online</p>
+                    </div>
+                    <div class="select-type_btn">
+                        <div class="circle"></div>
+                        <p>Offline</p>
+                    </div>
+                </div>
+            
                     <label for="date-time">Date and Time</label>
                     <input type="datetime-local" id="date-time" required>
                 </div>
@@ -106,8 +115,9 @@
                     <label for="description">Description</label>
                     <textarea id="description" rows="4" required></textarea>
                 </div>
-                <button type="submit">Create Event</button>
+                
             </form>
+            <button type="submit">Create Event</button>
         </section>
 
     </main>
