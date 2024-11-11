@@ -76,7 +76,6 @@ form{
 
 .upload-button {
   padding: 10px 20px;
-  border: 2px #333;
   border-radius: 10px;
   font-size: 16px;
   color: #95a0ff;
@@ -137,15 +136,15 @@ input,select,textarea{
 }
 
 button {
-  background: linear-gradient(to right, #ff00ff, #007bff);
-  color:var(--color-background);
-  border:none;
+  padding: 10px 20px;
+  border: 1px var(--color-text);
   border-radius: var(--border-radius);
-  padding: 10px 10px;
-  font-size: 1rem;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(to right, #ff00ff, #007bff);
+  background-clip: padding-box;
+  transition: all 0.3s ease;
   cursor: pointer;
-  transition: background-color var(--transition-duration);
-  margin-right: 0;
 }
 button:hover{
   background-color: var(--color-secondary);
