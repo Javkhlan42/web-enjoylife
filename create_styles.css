@@ -88,6 +88,7 @@ form{
 .upload-button:hover {
   background-color: #007bff;
   color: white;
+  transform: translateY(-2px);
 }
 
 input,select,textarea{
@@ -104,36 +105,36 @@ input,select,textarea{
   gap: 20px;
 }
 
-.select-type_btn {
+.toggle {
   display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  border: 1px solid var(--color-text);
-  border-radius: 20px;
+  border: 1px solid #95a0ff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+}
+
+.option {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
   cursor: pointer;
-  color:#333;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.select-type_btn.active {
-  background-color: #ffffff;
-  color: #333333;
+input[type="radio"] {
+  display: none;
 }
 
-.circle {
-  width: 14px;
-  height: 14px;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--color-text);
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.option {
+  color: var(--color-text);
+  background-color: white;
 }
 
-.select-type_btn.active .circle {
+input[type="radio"]:checked + label {
   background-color: #95a0ff;
+  color: white;
 }
+
 
 button {
   padding: 10px 20px;
@@ -148,6 +149,8 @@ button {
 }
 button:hover{
   background-color: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }
 
 
