@@ -81,16 +81,14 @@
                 <div class="Location">
                     <p>Location</p>
                 </div>
-                <div class="location-btn">
-                    <div class="select-type_btn active">
-                        <div class="circle"></div>
-                        <p>Online</p>
-                    </div>
-                    <div class="select-type_btn">
-                        <div class="circle"></div>
-                        <p>Offline</p>
-                    </div>
-                </div>
+                <div class="toggle">
+                    <input type="radio" id="offline" name="mode" checked>
+                    <label for="offline" class="option">Offline</label>
+                    
+                    <input type="radio" id="online" name="mode">
+                    <label for="online" class="option">Online</label>
+                  </div>
+                  
             
                     <label for="date-time">Date and Time</label>
                     <input type="datetime-local" id="date-time" required>
