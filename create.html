@@ -65,35 +65,31 @@
         <section class="section">
             <h1>Create an Event</h1>
             <form>
-                <div class="upload-container">
-                    <div class="upload-content">
-                        <div class="upload-icon">
-                            📷
-                        </div>
-                        <label for="file-upload" class="upload-button">Upload a photo or video</label>
-                        <input type="file" id="file-upload" accept="image/*,video/*" style="display: none;">
-                    </div>
+                <div class="upload-box">
+                    <span class="camera-icon">📷</span>
+                    <label for="file-input">Upload a photo and video</label>
+                    <input type="file" id="file-input" accept="image/*,video/*">
                 </div>
+                
                 <div>
                     <label for="event-title">Event title</label>
-                    <input type="text" id="event-title" required>
+                    <input type="text" placeholder="Эвентийн нэрээ оруулна уу">
+                    
                 </div>
-                <div class="Location">
+                <div class="location-toggle">
                     <p>Location</p>
-                </div>
-                <div class="toggle">
                     <input type="radio" id="offline" name="mode" checked>
                     <label for="offline" class="option">Offline</label>
                     
                     <input type="radio" id="online" name="mode">
                     <label for="online" class="option">Online</label>
-                  </div>
-                  
-            
+                </div>
+                
+                  <div>
                     <label for="date-time">Date and Time</label>
                     <input type="datetime-local" id="date-time" required>
                 </div>
-                <div>
+                <div class="form-row">
                     <label for="event-type">Event type</label>
                     <select id="event-type" required>
                         <option value="">-Сонгох-</option>
@@ -104,16 +100,14 @@
                         <option value="food-drinks">Food & Drinks</option>
                         <option value="music">Music</option>
                     </select>
-                </div>
-                <div>
+  
                     <label for="participants">Number of Participants</label>
                     <input type="number" id="participants" min="1" required>
                 </div>
                 <div>
                     <label for="description">Description</label>
-                    <textarea id="description" rows="4" required></textarea>
+                    <textarea rows="4" placeholder="Дэлгэрэнгүй мэдээлэл"></textarea>
                 </div>
-                
             </form>
             <button type="submit">Create Event</button>
         </section>
