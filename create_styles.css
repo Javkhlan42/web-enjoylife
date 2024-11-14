@@ -149,6 +149,7 @@ input[type="number"] {
 .location-toggle input[type="radio"]:checked + label.option {
   background-color: #95a0ff;
   color: #fff;
+  transition: var(--transition-duration);
 }
 
 
