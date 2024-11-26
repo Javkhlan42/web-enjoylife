@@ -49,7 +49,6 @@ body{
 }
 .header::before{
     top: 0;
-  
     background-color: rgba(0, 0, 0, 0.1) !important;
     backdrop-filter: blur(50px);
     left: 0;
@@ -369,7 +368,13 @@ margin-left: 10px;
   transform: translateX(30px);
 }
 
-
+/* DropDown */
+.user-pic{
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: -10px;
+}
   .sub-menu-wrap{
     position: absolute;
     top: 100%;
@@ -383,21 +388,22 @@ margin-left: 10px;
     max-height: 400px;
   }
   .sub-menu{
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     margin: 10px;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(50px);
   }
-  .user_info{
-    display: flex;
+  .user-info{
     align-items: center;
-
+    display:flex;
   }
 
-  .user_info h2{
+  .user-info h3{
     font-weight: 500;
-    color: #000;
+    color: #999;
   }
-  .user_info img{
+  .user-info img{
     width: 60px;
     border-radius: 50%;
     margin-right: 15px;
@@ -414,12 +420,12 @@ margin-left: 10px;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #525252;
+    color: #999;
     margin: 12px 0;
   }
   .sub-menu-link p{
     width: 100%;
-    color: #000;
+    color: #dad8d8;
   }
   .sub-menu-link img{
     width: 40px;
@@ -431,7 +437,7 @@ margin-left: 10px;
 
   .sub-menu-link span{
     font-size: 22px;
-    color: #000;
+    color: #999;
     transition: transporm 0.5s;
   }
   .sub-menu-link:hover span{
