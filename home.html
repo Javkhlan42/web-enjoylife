@@ -48,7 +48,7 @@
                 </li>
                 <li><i class="fa-solid fa-heart"></i>
                     <a href="#" class="menu-item">Likes</a>
-                </li>
+                    </li>
             </ul>
         </nav>
         <div class="login">
@@ -73,10 +73,48 @@
                     </label>
                 </li>
                 <li><i class="fa-regular fa-user"></i>
-                    <a href="#" class="menu-item">Loggin</a>
+                    <a href="#" class="menu-item" onclick="toggleMenu()">Loggin
+                        <div class="sub-menu-wrap" id="subMenu">
+                            <div class="sub-menu">
+                                <div class="user-info">
+                                    <img src="images/user.png">
+                                        <h2>James Aldrino</h2>
+                                        <hr>
+
+                                        <a href="#" class="sub-menu-link" >
+                                            <img src="images/profile.png">
+                                                <p>Edit profile</p>
+                                                <span>></span>
+                                        </a>
+                                        <a href="#" class="sub-menu-link" >
+                                            <img src="images/setting.png">
+                                                <p>Settings & privacy</p>
+                                                <span>></span>
+                                        </a>
+                                        <a href="#" class="sub-menu-link" >
+                                            <img src="images/help.png">
+                                                <p>Help & support</p>
+                                                <span>></span>
+                                        </a>
+                                        <a href="#" class="sub-menu-link" >
+                                            <img src="images/logout.png">
+                                                <p>Logout</p>
+                                                <span>></span>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
                 </li>
             </ul>
         </div>
+        <script>
+            const subMenu = document.getElementById("subMenu");
+                function toggleMenu(){
+                    subMenu.classList.toggle("open-menu");
+                }
+        </script>
     </header>
 
     <section class="banner">
