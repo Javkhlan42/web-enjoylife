@@ -1,6 +1,5 @@
 
         :root {
-            /* Өнгөний систем */
             --color-primary: #ee4b4b;
             --color-secondary: #4CAF50;
             --color-background: #ffffff;
@@ -8,19 +7,17 @@
             --color-text-light: #666666;
             --color-border: #dddddd;
             
-            /* Сүүдэр */
             --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
             --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
             --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-            
-            /* Spacing систем */
+         
             --space-xs: 0.25rem;
             --space-sm: 0.5rem;
             --space-md: 1rem;
             --space-lg: 2rem;
             --space-xl: 4rem;
             
-            /* Typography */
+
             --font-main: 'Roboto', sans-serif;
             --font-heading: 'Montserrat', sans-serif;
             --line-height-body: 1.6;
@@ -28,17 +25,6 @@
             --letter-spacing: 0.5px;
         }
 
-        /* Dark mode */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --color-background: #1a1a1a;
-                --color-text: #ffffff;
-                --color-text-light: #cccccc;
-                --color-border: #404040;
-            }
-        }
-
-        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -56,50 +42,9 @@
             line-height: var(--line-height-body);
             letter-spacing: var(--letter-spacing);
             transition: background-color 0.3s ease;
+
         }
 
-        /* Header Styles */
-        .header {
-            padding: var(--space-md);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: var(--shadow-sm);
-            position:relative;
-        }
-
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-
-        .search-container {
-          grid-column:1/ -1;
-          grid-row:1;
-          justify-self: center;
-          width: 100%;
-          max-width: 600px;
-          margin: 0 auto;
-          z-index: 1;
-        }
-
-        .search-input {
-            width: 100%;
-            padding: var(--space-md);
-            border: 1px solid var(--color-border);
-            border-radius: 2rem;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            background-color: var (--color-background);
-        }
-
-        .search-input:focus {
-            outline: none;
-            box-shadow: var(--shadow-md);
-            border-color: var(--color-primary);
-        }
-
-        /* Main Content */
         .main-container {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -119,7 +64,7 @@
             animation: slideInRight 0.5s ease-out;
         }
 
-        /* Form Styles */
+    
         .login-form {
             background-color: var(--color-background);
             padding: var(--space-lg);
@@ -162,7 +107,7 @@
         .btn-login {
             width: 100%;
             padding: var(--space-md);
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            background: linear-gradient(to right, #ff00ff, #007bff);
             color: white;
             border: none;
             border-radius: 0.5rem;
@@ -178,7 +123,7 @@
 
         /* Footer */
         .footer {
-            background-color: #1c1c1c;
+            background-color: #404040;
             padding: var(--space-lg);
             color: white;
             margin-top: auto;
