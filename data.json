@@ -1,0 +1,396 @@
+{
+    "event-type": {
+        "online": [
+            {
+                "Game": [
+                    {
+                        "id": 1,
+                        "image": "https://picsum.photos/200/300?random=1",
+                        "name": "Chess Tournament",
+                        "date": "2024-11-16",
+                        "time": "10:00 AM",
+                        "location": "City Sports Hall",
+                        "description": "A chess competition open to all ages.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 2,
+                        "image": "https://picsum.photos/200/300?random=2",
+                        "name": "Virtual Chess Championship",
+                        "date": "2024-11-19",
+                        "time": "12:00 PM",
+                        "location": "Online",
+                        "description": "Join the virtual chess championship with players from around the world.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 3,
+                        "image": "https://picsum.photos/200/300?random=3",
+                        "name": "Chess Battle Royale",
+                        "date": "2024-11-25",
+                        "time": "2:00 PM",
+                        "location": "City Sports Hall",
+                        "description": "A fast-paced chess battle royale event.",
+                        "price": "free"
+                    }
+                ],
+                "Sports": [
+                    {
+                        "id": 4,
+                        "image": "https://picsum.photos/200/300?random=4",
+                        "name": "Football Tournament",
+                        "date": "2024-11-17",
+                        "time": "10:00 AM",
+                        "location": "City Sports Hall",
+                        "description": "A football competition for local teams.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 5,
+                        "image": "https://picsum.photos/200/300?random=5",
+                        "name": "Basketball League",
+                        "date": "2024-11-21",
+                        "time": "9:00 AM",
+                        "location": "City Sports Hall",
+                        "description": "A competitive basketball league for all skill levels.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 6,
+                        "image": "https://picsum.photos/200/300?random=6",
+                        "name": "Swimming Championship",
+                        "date": "2024-11-26",
+                        "time": "1:00 PM",
+                        "location": "City Pool",
+                        "description": "A swimming competition for athletes.",
+                        "price": "free"
+                    }
+                ],
+                "Meeting": [
+                    {
+                        "id": 7,
+                        "image": "https://picsum.photos/200/300?random=7",
+                        "name": "Tech Meet-up",
+                        "date": "2024-11-18",
+                        "time": "5:00 PM",
+                        "location": "Online",
+                        "description": "A tech-focused meet-up for enthusiasts.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 8,
+                        "image": "https://picsum.photos/200/300?random=8",
+                        "name": "Developer Conference",
+                        "date": "2024-11-22",
+                        "time": "9:00 AM",
+                        "location": "City Convention Center",
+                        "description": "A conference for developers and programmers.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 9,
+                        "image": "https://picsum.photos/200/300?random=9",
+                        "name": "Startup Networking",
+                        "date": "2024-11-27",
+                        "time": "6:00 PM",
+                        "location": "City Business Center",
+                        "description": "Networking event for startups and entrepreneurs.",
+                        "price": "free"
+                    }
+                ],
+                "Holiday": [
+                    {
+                        "id": 10,
+                        "image": "https://picsum.photos/200/300?random=10",
+                        "name": "Christmas Parade",
+                        "date": "2024-12-01",
+                        "time": "10:00 AM",
+                        "location": "City Center",
+                        "description": "Join the annual Christmas parade with festive floats.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 11,
+                        "image": "https://picsum.photos/200/300?random=11",
+                        "name": "New Year's Eve Celebration",
+                        "date": "2024-12-31",
+                        "time": "9:00 PM",
+                        "location": "City Square",
+                        "description": "Celebrate New Year's Eve with live music and fireworks.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 12,
+                        "image": "https://picsum.photos/200/300?random=12",
+                        "name": "Holiday Craft Fair",
+                        "date": "2024-11-30",
+                        "time": "11:00 AM",
+                        "location": "City Convention Center",
+                        "description": "Holiday craft fair with handmade gifts and decorations.",
+                        "price": "free"
+                    }
+                ],
+                "Food & Drink": [
+                    {
+                        "id": 13,
+                        "image": "https://picsum.photos/200/300?random=13",
+                        "name": "Food Festival",
+                        "date": "2024-11-20",
+                        "time": "12:00 PM",
+                        "location": "City Square",
+                        "description": "A food festival featuring local and international dishes.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 14,
+                        "image": "https://picsum.photos/200/300?random=14",
+                        "name": "Wine Tasting Event",
+                        "date": "2024-11-23",
+                        "time": "3:00 PM",
+                        "location": "City Winery",
+                        "description": "A wine tasting event with exclusive local wines.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 15,
+                        "image": "https://picsum.photos/200/300?random=15",
+                        "name": "Brewery Tour",
+                        "date": "2024-11-29",
+                        "time": "1:00 PM",
+                        "location": "City Brewery",
+                        "description": "Tour a local brewery and enjoy freshly brewed beer.",
+                        "price": "free"
+                    }
+                ],
+                "Music": [
+                    {
+                        "id": 16,
+                        "image": "https://picsum.photos/200/300?random=16",
+                        "name": "Jazz Night",
+                        "date": "2024-11-18",
+                        "time": "8:00 PM",
+                        "location": "City Jazz Club",
+                        "description": "Enjoy an evening of smooth jazz with local artists.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 17,
+                        "image": "https://picsum.photos/200/300?random=17",
+                        "name": "Rock Concert",
+                        "date": "2024-11-22",
+                        "time": "7:00 PM",
+                        "location": "City Arena",
+                        "description": "Rock concert featuring top local bands.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 18,
+                        "image": "https://picsum.photos/200/300?random=18",
+                        "name": "Classical Music Performance",
+                        "date": "2024-11-28",
+                        "time": "6:00 PM",
+                        "location": "City Opera House",
+                        "description": "A performance by a renowned classical orchestra.",
+                        "price": "free"
+                    }
+                ]
+            }
+        ],
+        "offline": [
+            {
+                "Game": [
+                    {
+                        "id": 19,
+                        "image": "https://picsum.photos/200/300?random=19",
+                        "name": "Local Chess Tournament",
+                        "date": "2024-11-22",
+                        "time": "10:00 AM",
+                        "location": "City Sports Hall",
+                        "description": "A local chess tournament for all skill levels.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 20,
+                        "image": "https://picsum.photos/200/300?random=20",
+                        "name": "Board Game Night",
+                        "date": "2024-11-20",
+                        "time": "6:00 PM",
+                        "location": "Community Center",
+                        "description": "Come play board games with fellow enthusiasts.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 21,
+                        "image": "https://picsum.photos/200/300?random=21",
+                        "name": "Tabletop Gaming Convention",
+                        "date": "2024-11-26",
+                        "time": "10:00 AM",
+                        "location": "City Convention Center",
+                        "description": "Join the tabletop gaming convention with various events.",
+                        "price": "free"
+                    }
+                ],
+                "Sports": [
+                    {
+                        "id": 22,
+                        "image": "https://picsum.photos/200/300?random=22",
+                        "name": "Volleyball Tournament",
+                        "date": "2024-11-23",
+                        "time": "10:00 AM",
+                        "location": "City Sports Hall",
+                        "description": "A volleyball competition for local teams.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 23,
+                        "image": "https://picsum.photos/200/300?random=23",
+                        "name": "Basketball Game",
+                        "date": "2024-11-24",
+                        "time": "1:00 PM",
+                        "location": "City Arena",
+                        "description": "Join the local basketball game to show off your skills.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 24,
+                        "image": "https://picsum.photos/200/300?random=24",
+                        "name": "Soccer Game",
+                        "date": "2024-11-30",
+                        "time": "3:00 PM",
+                        "location": "City Stadium",
+                        "description": "A friendly local soccer game.",
+                        "price": "free"
+                    }
+                ],
+                "Meeting": [
+                    {
+                        "id": 25,
+                        "image": "https://picsum.photos/200/300?random=25",
+                        "name": "Developer Meet-up",
+                        "date": "2024-11-19",
+                        "time": "6:00 PM",
+                        "location": "City Business Center",
+                        "description": "A meet-up for developers to discuss projects.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 26,
+                        "image": "https://picsum.photos/200/300?random=26",
+                        "name": "Startup Pitch",
+                        "date": "2024-11-22",
+                        "time": "5:00 PM",
+                        "location": "City Conference Center",
+                        "description": "A pitch event for local startups.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 27,
+                        "image": "https://picsum.photos/200/300?random=27",
+                        "name": "Business Networking",
+                        "date": "2024-11-29",
+                        "time": "4:00 PM",
+                        "location": "City Hotel",
+                        "description": "Networking event for local business owners.",
+                        "price": "free"
+                    }
+                ],
+                "Holiday": [
+                    {
+                        "id": 28,
+                        "image": "https://picsum.photos/200/300?random=28",
+                        "name": "Halloween Parade",
+                        "date": "2024-11-28",
+                        "time": "7:00 PM",
+                        "location": "City Streets",
+                        "description": "A fun Halloween parade with costumes and decorations.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 29,
+                        "image": "https://picsum.photos/200/300?random=29",
+                        "name": "Christmas Eve Party",
+                        "date": "2024-12-24",
+                        "time": "9:00 PM",
+                        "location": "City Park",
+                        "description": "Celebrate Christmas Eve with family-friendly activities and a bonfire.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 30,
+                        "image": "https://picsum.photos/200/300?random=30",
+                        "name": "New Year's Eve Bash",
+                        "date": "2024-12-31",
+                        "time": "10:00 PM",
+                        "location": "Downtown Plaza",
+                        "description": "Ring in the new year with music, food, and fireworks.",
+                        "price": "free"
+                    }
+                ],
+                "Food & Drink": [
+                    {
+                        "id": 31,
+                        "image": "https://picsum.photos/200/300?random=31",
+                        "name": "Barbecue Festival",
+                        "date": "2024-11-24",
+                        "time": "12:00 PM",
+                        "location": "City Park",
+                        "description": "A festival featuring the best barbecue from local chefs.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 32,
+                        "image": "https://picsum.photos/200/300?random=32",
+                        "name": "Craft Beer Tasting",
+                        "date": "2024-11-21",
+                        "time": "3:00 PM",
+                        "location": "Local Brewery",
+                        "description": "Taste the finest craft beers from local breweries.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 33,
+                        "image": "https://picsum.photos/200/300?random=33",
+                        "name": "Food Truck Fiesta",
+                        "date": "2024-12-05",
+                        "time": "5:00 PM",
+                        "location": "City Streets",
+                        "description": "Enjoy delicious food from the best food trucks in the city.",
+                        "price": "free"
+                    }
+                ],
+                "Music": [
+                    {
+                        "id": 34,
+                        "image": "https://picsum.photos/200/300?random=34",
+                        "name": "Pop Music Night",
+                        "date": "2024-11-21",
+                        "time": "7:00 PM",
+                        "location": "City Arena",
+                        "description": "A night of pop music featuring local artists.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 35,
+                        "image": "https://picsum.photos/200/300?random=35",
+                        "name": "Jazz Band Concert",
+                        "date": "2024-11-25",
+                        "time": "8:00 PM",
+                        "location": "City Jazz Club",
+                        "description": "Live performance by a renowned jazz band.",
+                        "price": "free"
+                    },
+                    {
+                        "id": 36,
+                        "image": "https://picsum.photos/200/300?random=36",
+                        "name": "Rock Music Festival",
+                        "date": "2024-12-05",
+                        "time": "6:00 PM",
+                        "location": "City Stadium",
+                        "description": "A rock music festival featuring popular bands.",
+                        "price": "free"
+                    }
+                ]
+            }
+        ]
+    }
+}
