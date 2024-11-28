@@ -1,16 +1,21 @@
 :root {
-    --back-r:8px;   
-    --button-h:50px;
-    --grid-size:1fr;
+    --back-r: 8px;   
+    --button-h: 60px;
+    --grid-size: 1fr;
     --icon-size: 6rem;
     --icon-inner-size: 2.2rem;
     --size50: 50%;
     --size20: 1.25rem;
     --size5: 0.3rem;
-    --header-padding: 1rem;
-    --ten:10px;
-    --sticky:7rem
+    --header-padding: 0.5rem;
+    --ten: 10px;
+    --sticky: 7rem;
+    --font-size-small: 0.875rem; /* Гар утсанд жижиг фонт */
+    --font-size-normal: 1rem;    /* Стандарт фонт */
+    --primary-color: #95a0ff;    /* үндсэн өнгө */
+    --secondary-color: #6a7bf9;  /* хоёрдогч өнгө */
 }
+
 
 * {
     margin: 0;
@@ -25,21 +30,7 @@ body {
 }
 
 
-
-/* Banner Styles */
-.banner {
-    overflow: hidden;
-    padding-bottom: 3.5rem;
-    background-size: cover;
-}
-
-.banner-zurag {
-    width: 100%;
-    height: 400px;
-    display: block;
-}
-
-/* Navigation for categories */
+/* event type 6*/
 nav ul {
     list-style: none;
     display: flex;
@@ -108,7 +99,8 @@ nav ul li {
     color: #20139b;
 }
 
-/* Event Type Buttons */
+
+/* Event Type Buttons   online and offline button */
 .type {
     outline: none;
     cursor: pointer;
@@ -196,12 +188,7 @@ input[type="radio"]:checked + span {
 
 
 
-
-
-
-
-
-/*..........................................................................*/
+/*.......end online offline button...............................................................*/
 
 /* Horizontal Line   engiin zuraas*/
 .verticle-line {
@@ -250,8 +237,9 @@ input[type="radio"]:checked + span {
     display: grid;
     grid-template-columns: 15% 1fr;
     /* gap: 0% var(--icon-size); */
-    margin-top: var(--header-padding);
+    /* margin-top: var(--header-padding); */
     margin-right: var(--ten);
+    margin-bottom: 5rem;
 }
 
 
@@ -267,23 +255,59 @@ input[type="radio"]:checked + span {
 }
 
 .event-card{
-    max-width: 250px; /* Өргөнд дээд хэмжээ тогтоох */
-    height: auto;
+    max-width: 270px; /* Өргөнд дээд хэмжээ тогтоох */
+    height: 400px;
     background-color: #fefefe;
     border-radius: var(--back-r); /*baraanii durwuljin irmeggui bolgoh*/
     overflow:hidden; /*border-radius tai hamt hereglewel zohistoi ba zuragnii iluu hesgiig nuuj, iluu tsewehen haragduuldag*/
     transition: 0.4s;  
+    position: relative; /*huuhed elmentuddee dotroo bairluulahad heregtei*/
 }
+
 
 .event-card:hover{
     cursor:pointer;
-    box-shadow: 5px 5px 10px rgba(1, 0, 0, 0.4);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     transition: 0.4s;
 }
 
 .event-card img{
     width:100%;
     height: 40%;
+}
+
+.bicheesuud{
+    padding: 0 10px;
+    gap:20px;
+}
+
+.Love p{
+    padding: 0 10px;
+}
+
+/*join button -----------------------*/
+
+
+.negdeh-towch {
+    position: absolute;
+    bottom: -50px;  /* Картын доороос эхлэх */
+    left: 50%;      /* төвд байрлах байрлал */
+    transform: translateX(-50%); /* Товчлуурыг  голлуулахын тулд офсет */
+    padding: 15px 20px;
+    width: 100%;     /* Adjust width as needed */
+    background-color: #95a0ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: bottom 0.3s ease, background-color 0.3s ease; /*ungiin uurchlult bolon hudulguni hugatsaa*/
+}
+
+.event-card:hover .negdeh-towch {
+    bottom: 0px;  /* гүйлгэх үед товчлуурыг дээш хөдөлгөнө */
+}
+.negdeh-towch:hover{
+    background-color: #6a7bf9; 
 }
 
 
@@ -301,6 +325,7 @@ input[type="radio"]:checked + span {
 }
 
 .icon {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     transition: opacity 0.3s ease-in-out /*easein ni ehende udaan tugsgulruuge hurdan boloh*/;
@@ -326,14 +351,25 @@ input[type="radio"]:checked + span {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
+    /* Гар утасны фонтын хэмжээ */
+    body {
+        font-size: var(--font-size-small);
+    }
+
+    /* Хамгийн бага, уян хатан grid зохион байгуулалт */
+    .baraanuud {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--ten);
+    }
+
+    /* Зураг болон картын тохируулга */
+    .event-card {
+        max-width: 100%;
+        margin-bottom: var(--ten);
     }
     
-    .event-types {
-        flex-direction: column;
-        align-items: flex-start;
+    .banner-zurag {
+        height: 200px;
     }
 
     .filter {
@@ -341,13 +377,16 @@ input[type="radio"]:checked + span {
         padding: 1rem;
     }
 
-    .article {
+    /* Navigation тохируулга */
+    nav ul {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
-
-    .cart {
-        width: 100%;
-        margin: 10px 0;
+    
+    /* Харагдахуйц том товч */
+    .negdeh-towch {
+        width: 90%;
+        font-size: var(--font-size-small);
+        padding: 10px 0;
     }
 }
