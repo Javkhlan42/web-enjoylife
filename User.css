@@ -1,0 +1,264 @@
+
+:root{
+  --top-size:5rem;
+  --font-size:35px;
+  --grid-size:1fr;
+  --button-w:130px;
+  --button-h:50px;
+  --button-r:10px;
+  --padding:31.25rem;
+  --margin:1rem;
+  --back-r:8px;
+  --urd:60px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.body{
+    padding-top:var(--top-size);
+    background-color: #fefefe;
+}
+
+
+/*MY event bolon Button heseg*/
+
+.Event {
+    padding: var(--top-size);
+    display: grid;
+    grid-template-columns: var(--grid-size) var(--grid-size);
+}
+
+.Event h1{
+    font-size:var(--font-size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;  /*MY EVENTS ugiig grid dotor bairluulah*/
+}
+
+.Event button {
+    cursor: pointer; /*buttun deer cursor ochod uurchlugddug*/
+    width: var(--button-w);
+    height: var(--button-h);
+    border-radius: var(--button-r);
+    border: none; /*button hureenii har ungiig arilgah*/
+    margin-left: var(--padding); /*button zuun talruu bairluulsan*/
+    color: #ffffff; /*ugnii ungu*/
+    background-color: #a3adfe;
+    transition: 0.3s;
+}
+
+.Event button:hover{
+    cursor: pointer;
+    background-color: #808fff;
+    transition: 0.3s;
+}
+
+.Event button {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*event design heseg*/
+.baraanuud {
+    display: grid;
+    grid-template-columns: var(--grid-size) var(--grid-size) var(--grid-size) var(--grid-size);
+    gap: var(--button-h) 10px; /* var muriin zai , 10 ni Багануудын хоорондын зай */
+    width: 100%; /* Эцэг элементэд тохируулсан өргөн */
+    margin: 0px 30px;
+    padding: 20px 40px;
+}
+
+.event-card{
+    max-width: 270px; /* Өргөнд дээд хэмжээ тогтоох */
+    height: 400px;
+    background-color: #fefefe;
+    border-radius: var(--back-r); /*baraanii durwuljin irmeggui bolgoh*/
+    overflow:hidden; /*border-radius tai hamt hereglewel zohistoi ba zuragnii iluu hesgiig nuuj, iluu tsewehen haragduuldag*/
+    transition: 0.4s;  
+    position: relative;
+    width: 100%;
+}
+
+.event-card:hover{
+    cursor:pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.event-card img{
+    width:100%;
+    height: 40%;
+}
+
+.bicheesuud {
+    padding: 0 10px;
+}
+
+
+/* Love Button */
+.Love{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.Love p{
+    padding: 0 10px;
+}
+
+.check[type="checkbox"] {
+    display: none; /*checkbox durwuljin nudiig haragduulahgui bolon*/
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease-in-out /*easein ni ehende udaan tugsgulruuge hurdan boloh*/;
+    color: #666; /*icon zurhnii huree ni saaral*/
+}
+
+.icon.inactive {
+    display: inline-block;/*neg murund bairluulah hujuu tald ni zeregtsee*/
+}
+
+.icon.active {
+    display: none;
+    color: #f52121;
+}
+
+.check[type="checkbox"]:checked + .container .icon.inactive {  /*check darwal container dotor icon songono(icon.inactive songojiga)  */
+    display: none; /*none ni icon.inactive dusaiig haruulahgui bolgojiga*/
+}
+
+.check[type="checkbox"]:checked + .container .icon.active { /*click hiih buyu check deer darsan tohioldold .container roos .icon.active ruu shiljuuleh*/
+    display: inline-block;  /*ene ni 2 neg murund bairluulah ba , baihgui bol check darwal shine murund shiljin*/ 
+}
+
+
+/*fix button --------------*/
+
+.fix-btn {
+    position: absolute;
+    bottom: 0;
+    right: -50%; /* Эхэндээ зүүн талд далд байрлалд байна */
+    width: 50%;
+    background: #95a0ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: none;
+    transition: right 0.3s ease, background-color 0.3s ease;
+}
+
+.event-card:hover .fix-btn {
+    right: 0; /* Hover үед зүүнээс гарч ирнэ */
+    bottom: 0;/*dood taldaa yg naaldaj taarah*/
+}
+
+.event-card .fix-btn {
+    right: -50%;
+    transition: right 0.3s ease-out; /* Удаанаар буцах */
+
+}
+
+
+.fix-btn:hover {
+    background-color: #6a7bf9;
+}
+
+/*delete button---------------------*/
+
+.delete-btn {
+    position: absolute;
+    bottom: 0;
+    left: -50%; /* Эхэндээ баруун талд далд байрлалд байна */
+    width: 50%;
+    background: #95a0ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: none;
+    transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.event-card:hover .delete-btn {
+    left: 0; /* Hover үед баруунаас гарч ирнэ */
+    bottom: 0;/*dood taldaa yg naaldaj taarah*/
+}
+
+
+.delete-btn:hover {
+    background-color: #6a7bf9;
+}
+
+.event-card .delete-btn{
+    left: -50%;
+}
+
+
+@media (max-width: 768px) {
+    :root {
+        --font-size: 25px;
+        --grid-size: 1fr;
+        --button-w: 100px;
+        --button-h: 40px;
+        --padding: 1rem;
+    }
+
+    .body {
+        padding-top: var(--padding);
+    }
+
+    .Event {
+        padding: var(--padding);
+        grid-template-columns: 1fr; /* 1 багана болгоно */
+        gap: 1rem; /* Зай нэмнэ */
+    }
+
+    .Event h1 {
+        font-size: var(--font-size);
+        text-align: center; /* Гар утсанд төвлөрүүлэх */
+    }
+
+    .Event button {
+        margin: 0 auto; /* Төвд байрлуулна */
+        display: block;
+        width: 80%; /* Урт нь дэлгэцийн өргөний 80% */
+    }
+
+    .baraanuud {
+        grid-template-columns: 1fr 1fr; /* 2 багана болгоно */
+        gap: 1rem; /* Багануудад тохирох зай нэмнэ */
+        margin: var(--padding);
+        padding: 0;
+    }
+
+    .event-card {
+        max-width: 100%; /* Эцэг элементэд тохируулах */
+    }
+
+    .Love {
+        grid-template-columns: 1fr; /* 1 багана болгоно */
+        padding: 0;
+    }
+
+    .fix-btn, 
+    .delete-btn {
+        font-size: 14px; /* Үсгийн хэмжээг багасгана */
+        width: 100%; /* Дэлгэцийн өргөнийг эзлүүлэх */
+    }
+}
+
+
+
+
+
+
+

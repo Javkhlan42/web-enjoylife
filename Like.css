@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-size:5.5rem;
+    --back-r:8px;
+    --fifty:3.125rem;
+    --hund:6.25rem;
+    --urgun:56.25rem;
+    --size:35px
+}
+
+
+
+/*Like heseg*/
+
+.Like h2{
+    padding-top: var(--fifty);
+    padding-left: var(--hund);
+    font-weight: bold;
+    text-align: left;
+    font-size: var(--size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.Lbaraa{
+  display: grid;
+  grid-template-columns: 1fr; /*1 murund 1 baraa baihaar delgetsiig taaruulsan*/
+  padding: var(--fifty) var(--hund);
+  gap: var(--fifty); /*baraa hoorondiin zaig awsan*/
+}
+
+
+
+/*baraanii heseguud*/
+
+.Like{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top:var(--top-size);
+}
+
+
+.event-card{
+    height: 180px;
+    width: var(--urgun);
+    background-color: #ffffff;
+    border-radius: var(--back-r); /*baraanii durwuljin irmeggui bolgoh*/
+    overflow:hidden; /*border-radius tai hamt hereglewel zohistoi ba zuragnii iluu hesgiig nuuj, iluu tsewehen haragduuldag*/
+    transition: 0.4s;  
+    display: flex;
+    /* grid-template-columns: 300px 1fr; */
+}
+
+
+
+.event-card:hover{
+    cursor:pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.event-card img {
+    padding: 20px 30px;
+    object-fit: cover; /* Зургийг огтлолгүй тохируулах */
+    border-radius: var(--back-r); /* Зургийн ирмэгийг зөөлрүүлнэ */
+}
+
+
+.bicheesuud {
+    padding-top: 20px;
+}
+.bicheesuud p{
+    padding-top: 5px;
+}
+
+
+/*Joined ----------------*/
+/* .Joined h2{
+    padding-top: var(--fifty);
+    padding-left: var(--hund);
+    font-weight: bold;
+    text-align: left;
+    font-size: var(--size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+
+/* Love Button */
+.Love{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding-right: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+
+
+.check[type="checkbox"] {
+    display: none; /*checkbox durwuljin nudiig haragduulahgui bolon*/
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease-in-out /*easein ni ehende udaan tugsgulruuge hurdan boloh*/;
+    color: #666; /*icon zurhnii huree ni saaral*/
+}
+
+.icon.inactive {
+    display: inline-block;/*neg murund bairluulah hujuu tald ni zeregtsee*/
+}
+
+.icon.active {
+    display: none;
+    color: #f52121;
+}
+
+.check[type="checkbox"]:checked + .container .icon.inactive {  /*check darwal container dotor icon songono(icon.inactive songojiga)  */
+    display: none; /*none ni icon.inactive dusaiig haruulahgui bolgojiga*/
+}
+
+.check[type="checkbox"]:checked + .container .icon.active { /*click hiih buyu check deer darsan tohioldold .container roos .icon.active ruu shiljuuleh*/
+    display: inline-block;  /*ene ni 2 neg murund bairluulah ba , baihgui bol check darwal shine murund shiljin*/ 
+}
+
+
+
