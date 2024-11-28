@@ -108,6 +108,66 @@ nav ul li {
     color: #20139b;
 }
 
+
+.All1 {
+    padding-top: 3.3rem;
+    padding-bottom: 3rem;
+    list-style: none;
+}
+
+.All1 li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+}
+
+.All1 li a:hover {
+    color: #20139b;
+}
+
+.All1 li a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border-radius: 50%;
+    background-color: #eceeff;
+    border: 0.5px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.All1 li a:hover div {
+    background-color: #cdd2f8;
+}
+
+.All1 li a div img {
+    width: 100%; /* Элемент дүүргэх */
+    height: 100%; /* Элемент дүүргэх */
+    object-fit: cover; /* Харьцааг хадгалж, дүүргэх */
+    border-radius: 50%; /* Дугуй болгох */
+    transition: filter 0.3s ease;
+}
+
+.All1 li a:hover div img {
+    filter: hue-rotate(180deg);
+}
+
+.All1 li a p {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.All1 li a:hover p {
+    color: #20139b;
+}
+
 /* Event Type Buttons */
 .type {
     outline: none;

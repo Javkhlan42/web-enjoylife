@@ -1,0 +1,134 @@
+main {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.user-info,
+.event-info {
+    flex: 1;
+    background-color: #fff;
+    padding: 5px 30px 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h2,
+.event-info h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: inline;
+}
+
+.form-group label {
+    display: inline;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.no-events {
+    text-align: center;
+    color: #666;
+}
+
+.no-events img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer хэсэг */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    margin-right: 20px;
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.event-cta button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-cta button.create-event-btn {
+    background-color: #ff3e3e;
+    margin-left: 10px;
+}
+
+.event-cta button:hover {
+    background-color: #218838;
+}
+
+/* Зураг стиль */
+.banner-zurag {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.banner-zurag:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    text-align: center;
+    /* Логоны div-ийг төвлөрүүлэх */
+    margin: 0px 0;
+    /* Дээд болон доод талаас зай өгөх */
+}
+
+.logo img {
+    width: 50px;
+    /* Логоны өргөнийг тохируулах */
+    height: auto;
+    /* Зурагны харьцааг хадгалах */
+    max-width: 100%;
+    /* Хэмжээ нь дэлгэцийн өргөнөөс давахгүй байх */
+    display: inline-block;
+    /* Зургийг inline-block байдлаар харуулах */
+}
+
+.event-info img {
+    padding: 0.5em;
+    width: 15em;
+    height: auto;
+    opacity: 0.5;
+    /* Бага зэрэг тунгалаг болгоно */
+    transition: transform 0.3s, opacity 0.3s;
+    /* Хөдөлгөөн ба тунгалаг байдалд шилжилт нэмэх */
+}
+
+.no-events img:hover {  
+    transform: scale(1.1);
+    /* Хулганаар дээр нь hover хийхэд 10% томруулна */
+    opacity: 1;
+    /* Тунгалаг байдлыг бууруулна */
+}
