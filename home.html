@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="header-style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,13 +16,17 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+    <script type="module" src="app.js" defer></script>
+
+
 </head>
 
 <body>
+
+
     <header class="header">
         <a href="#" class="logo">
             Enjoy Life
@@ -81,19 +86,14 @@
                                         
                                     </div>
                                     <hr>
-                                        <a href="#" class="sub-menu-link" >
+                                        <a href="User.html" class="sub-menu-link" >
                                             <img src="images/profile.png">
-                                                <p>Edit profile</p>
+                                                <p>Хэрэглэгчийн хэсэг</p>
                                                 <span>></span>
                                         </a>
                                         <a href="#" class="sub-menu-link" >
                                             <img src="images/setting.png">
-                                                <p>Settings & privacy</p>
-                                                <span>></span>
-                                        </a>
-                                        <a href="#" class="sub-menu-link" >
-                                            <img src="images/help.png">
-                                                <p>Help & support</p>
+                                                <p>Account settigs</p>
                                                 <span>></span>
                                         </a>
                                         <a href="#" class="sub-menu-link" >
@@ -120,245 +120,125 @@
     <section class="banner">
         <h2>Манай хуудаст тавтай морил</h2>
     </section>
-    <main>
-
-        <nav aria-label="Event Categories">
-            <ul class="All">
-                <li>
-                    <a href="#">
-                        <div><img src="gaming.svg" alt="Game" class="game-icon"></div>
-                        <p>Game</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><img src="1176751-200.png" alt="Sport" class="sport-icon"></div>
-                        <p>Sport</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><img src="meeting.svg" alt="Meet" class="meet-icon"></div>
-                        <p>Meeting</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><img src="holiday-leisure.svg" alt="Holiday" class="holiday-icon"></div>
-                        <p>Holiday</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><img src="food-1.svg" alt="Food" class="food-icon"></div>
-                        <p>Food & Drink</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div><img src="microphone.svg" alt="Mic" class="circle-icon"></div>
-                        <p>Music</p>
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
 
 
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <nav aria-label="Event Categories">
+        <ul class="All">
+            <li>
+                <a href="#">
+                    <div><img src="gaming.svg" alt="Game" class="game-icon"></div>
+                    <p>Game</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div><img src="1176751-200.png" alt="Sport" class="sport-icon"></div>
+                    <p>Sport</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div><img src="meeting.svg" alt="Meet" class="meet-icon"></div>
+                    <p>Meeting</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div><img src="holiday-leisure.svg" alt="Holiday" class="holiday-icon"></div>
+                    <p>Holiday</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div><img src="food-1.svg" alt="Food" class="food-icon"></div>
+                    <p>Food & Drink</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div><img src="microphone.svg" alt="Mic" class="circle-icon"></div>
+                    <p>Music</p>
+                </a>
+            </li>
+        </ul>
 
-        <div class="verticle-line"></div>
+    </nav>
 
 
-        <section class="event-types">
-            <h3>Browsing event type</h3>
-            
-            <label class="type">
-                <input type="radio" name="eventType" hidden>
-                <span><i class="fas fa-laptop"></i> Online</span>
-            </label>
-            
-            <label class="type">
-                <input type="radio" name="eventType" hidden>
-                <span><i class="fas fa-users"></i> Offline</span>
-            </label>
-        </section>
-        
-        
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <div class="verticle-line"></div>
 
 
-        <div class="verticle-line"></div>
+    <section class="event-types">
+        <h3>Browsing event type</h3>
+
+        <!-- Онлайн болон офлайн радиогийн товчнуудыг нэмэх -->
+        <label class="type">
+            <input type="radio" name="eventType" value="online" hidden>
+            <span><i class="fas fa-laptop"></i> Online</span>
+        </label>
+
+        <label class="type">
+            <input type="radio" name="eventType" value="offline" hidden>
+            <span><i class="fas fa-users"></i> Offline</span>
+        </label>
+    </section>
 
 
 
 
-
-        <section class="body-1">
-
-            <aside class="filter">
-                <h3 class="here">Date</h3>
-                <div class="date-filter">
-                    <label for="check"><input type="checkbox" id="today">Today</label>
-                    <label><input type="checkbox" id="tomorrow"> Tomorrow</label>
-                    <label><input type="checkbox" id="this weekend"> This Weekend</label>
-                    <label><input type="checkbox" id="this month"> This Month</label>
-                </div>
-            </aside>
+    <div class="verticle-line"></div>   
 
 
-            <section class="baraanuud">
 
+
+
+    <section class="body-1">
+
+        <aside class="filter">
+            <h3 class="here">Date</h3>
+            <div class="date-filter">
+                <label for="check"><input type="checkbox" id="today">Today</label>
+                <label><input type="checkbox" id="tomorrow"> Tomorrow</label>
+                <label><input type="checkbox" id="this weekend"> This Weekend</label>
+                <label><input type="checkbox" id="this month"> This Month</label>
+            </div>
+        </aside>
+
+
+        <section class="baraanuud">
+
+            <a href="###">
                 <article class="event-card">
                     <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр  </p>
+
+                    <section class="bicheesuud">
+                        <h3>Event Name</h3>
+                        <p>Data : 2024-10-5 Time:11:00 pm</p>
+                        <p>Locaiotn:Улаанбаатар ХУД 15-байр</p>
+                        <p>decsription: tailbar</p>
+                    </section>
+
                     <div class="Love">
                         <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-1" />
-                        <label class="container" for="like-toggle-1">
+                        <input class="check" type="checkbox" id="like-toggle-0" />
+                        <label class="container" for="like-toggle-0">
                             <i class="fa-regular fa-heart icon inactive"></i>
                             <i class="fa-solid fa-heart icon active"></i>
                         </label>
                     </div>
-
-                    <button class="negdeh">Join Event</button>
+                    <button class="negdeh-towch">Join Event</button>
                 </article>
-
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-2" />
-                        <label class="container" for="like-toggle-2">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-3" />
-                        <label class="container" for="like-toggle-3">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-4" />
-                        <label class="container" for="like-toggle-4">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-5" />
-                        <label class="container" for="like-toggle-5">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-6" />
-                        <label class="container" for="like-toggle-6">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-7" />
-                        <label class="container" for="like-toggle-7">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-8" />
-                        <label class="container" for="like-toggle-8">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-
-                <article class="event-card">
-                    <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
-                    <h3>Pop-up Createurs 5 et 6 Octobre 2024</h3>
-                    <p>Saturday ~ 11:00 AM</p>
-                    <p>Улаанбаатар хот Хан-Уул 15 байр 3 байр</p>
-                    <div class="Love">
-                        <p>Free</p>
-                        <input class="check" type="checkbox" id="like-toggle-10" />
-                        <label class="container" for="like-toggle-10">
-                            <i class="fa-regular fa-heart icon inactive"></i>
-                            <i class="fa-solid fa-heart icon active"></i>
-                        </label>
-                    </div>
-                </article>
-
-
-            </section>
+            </a>
 
         </section>
-    </main>
+
+    </section>
+   
 
 
+    <!-- <script src="script.js"></script> -->
 
 </body>
 
