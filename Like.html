@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Like</title>
-    <link rel="stylesheet" href="User-header.css">
+    <link rel="stylesheet" href="header-style.css">
     <link rel="stylesheet" href="Like.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -71,11 +71,44 @@
                         <span class="slider"></span>
                     </label>
                 </li>
-                <li><i class="fa-regular fa-user"></i>
-                    <a href="#" class="menu-item">Loggin</a>
-                </li>
-            </ul>
-        </div>
+                <li><img src="images/user.png" class="user-pic" onclick="toggleMenu()">
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="images/user.png">
+                                    <h3>Dorjsuren Tseren</h3>
+                                    
+                                </div>
+                                <hr>
+                                    <a href="User.html" class="sub-menu-link" >
+                                        <img src="images/profile.png">
+                                            <p>Хэрэглэгчийн хэсэг</p>
+                                            <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link" >
+                                        <img src="images/setting.png">
+                                            <p>Account settigs</p>
+                                            <span>></span>
+                                    </a>
+                                    <a href="#" class="sub-menu-link" >
+                                        <img src="images/logout.png">
+                                            <p>Logout</p>
+                                            <span>></span>
+                                    </a>
+                            
+                        </div>
+                    </div>
+                </a>
+                
+            </li>
+        </ul>
+    </div>
+    <script>
+        const subMenu = document.getElementById("subMenu");
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+    </script>
     </header>
 
 

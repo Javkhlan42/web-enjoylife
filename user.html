@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile - ENJOYLIFE</title>
-    <link rel="stylesheet" href="home.css">
+    <title>User</title>
+    <link rel="stylesheet" href="User-header.css">
+    <link rel="stylesheet" href="User.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="header-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,25 +17,21 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-    <link rel="stylesheet" href="style.css"> <!-- External CSS файл -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="user.css">
+
+
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
+
+
     <header class="header">
-        <a href="#" class="logo">
+        <a href="home.html" class="logo">
             Enjoy Life
         </a>
         <input type="checkbox" id="checkbox">
-        <label for="checkbox" class="icons">    
+        <label for="checkbox" class="icons">
             <i class="fa-solid fa-bars" id="menu-icon"></i>
             <i class="fa-solid fa-x" id="close-icon"></i>
         </label>
@@ -48,16 +43,17 @@
         </form>
         <nav class="navbar">
             <ul>
-                <li><i class="fa-solid fa-house"></i>
-                    <a href="#" class="menu-item">Home</a>
-                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="Joined.html" class="menu-item">Joined</a>
+                </li>                
                 <li><i class="fa-solid fa-plus"></i>
                     <a href="#" class="menu-item">Create an event</a>
 
                 </li>
                 <li><i class="fa-solid fa-heart"></i>
                     <a href="#" class="menu-item">Likes</a>
-                    </li>
+                </li>
             </ul>
         </nav>
         <div class="login">
@@ -81,126 +77,132 @@
                         <span class="slider"></span>
                     </label>
                 </li>
-                <li><img src="images/user.png" class="user-pic" onclick="toggleMenu()">
-                        <div class="sub-menu-wrap" id="subMenu">
-                            <div class="sub-menu">
-                                <div class="user-info">
-                                    <img src="images/user.png">
-                                        <h3>Dorjsuren Tseren</h3>
-                                        
-                                    </div>
-                                    <hr>
-                                        <a href="#" class="sub-menu-link" >
-                                            <img src="images/profile.png">
-                                                <p>Edit profile</p>
-                                                <span>></span>
-                                        </a>
-                                        <a href="#" class="sub-menu-link" >
-                                            <img src="images/setting.png">
-                                                <p>Settings & privacy</p>
-                                                <span>></span>
-                                        </a>
-                                        <a href="#" class="sub-menu-link" >
-                                            <img src="images/help.png">
-                                                <p>Help & support</p>
-                                                <span>></span>
-                                        </a>
-                                        <a href="#" class="sub-menu-link" >
-                                            <img src="images/logout.png">
-                                                <p>Logout</p>
-                                                <span>></span>
-                                        </a>
-                                
-                            </div>
-                        </div>
-                    </a>
-                    
+                <li><i class="fa-regular fa-user"></i>
+                    <a href="#" class="menu-item">Loggin</a>
                 </li>
             </ul>
         </div>
-        <script>
-            const subMenu = document.getElementById("subMenu");
-                function toggleMenu(){
-                    subMenu.classList.toggle("open-menu");
-                }
-        </script>
     </header>
 
-    <!-- Breadcrumb -->
-    <nav class="breadcrumb">
-        <a href="#">Нүүр хуудас</a> &gt; <a href="#">Хувийн мэдээлэл</a>
-    </nav>
+    <section class="body">
 
-    <!-- Main content section -->
-    <main>
-        <section class="user-info">
-            <h2>Хувийн мэдээлэл</h2>
-            <form>
-                <div class="form-group">
-                    <label for="first-name">Овог</label>
-                    <input type="text" id="first-name" placeholder="Овог">
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Нэр</label>
-                    <input type="text" id="last-name" placeholder="Нэр">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Утас</label>
-                    <input type="tel" id="phone" placeholder="Утас">
-                </div>
-                <div class="form-group">
-                    <label for="email">Имэйл</label>
-                    <input type="email" id="email" placeholder="Имэйл">
-                </div>
-                <div class="form-group">
-                    <label for="facebook">Facebook</label>
-                    <input type="text" id="facebook" placeholder="Facebook">
-                </div>
-                <div class="form-group">
-                    <label for="instagram">Instagram</label>
-                    <input type="text" id="instagram" placeholder="Instagram">
-                </div>
-                <div class="form-group">
-                    <label for="youtube">Youtube</label>
-                    <input type="text" id="youtube" placeholder="Youtube">
-                </div>
-                <div class="form-group">
-                    <label for="hobby">Хобби</label>
-                    <input type="text" id="hobby" placeholder="Хөл бөмбөг">
-                </div>
-                <div class="form-group">
-                    <label for="favorite-music">Дуу хөгжим</label>
-                    <input type="text" id="favorite-music" placeholder="Дуу хөгжим">
-                </div>
-                <input type="submit" value="Хадгалах" />
-            </form>
+        <section class="Event">
+            <h1>My Events</h1>
+           <a href="Create.html"><button>Create Event</button></a>
         </section>
 
-        <section class="event-info">
-            <h2>Эвэнт мэдээлэл</h2>
-            <div class="no-events">
-                <p>Хадгалагдсан эвент алга</p>
-                <img src="box.svg" alt="No events">
-            </div>
-        </section>
-    </main>
 
-    <!-- Footer section -->
-    <footer>
-        <div class="logo">
-            <a href="#"><img src="logo.PNG" width="50" height="50" alt="Logo"></a>
-        </div>
-        <div class="footer-links">
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Gallery</a>
-            <a href="#">Team</a>
-        </div>
-        <div class="event-cta">
-            <button>Let's find event</button>
-        </div>
-    </footer>
+        <section class="baraanuud">
+
+            <article class="event-card">
+                <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
+                <section class="bicheesuud">
+                    <h3>Event Name</h3>
+                    <p>Data : 2024-10-5 Time:11:00 pm</p>
+                    <p>Locaiotn:Улаанбаатар ХУД 15-байр</p>
+                    <p>decsription: tailbar</p>
+                </section>
+                <div class="Love">
+                    <p class="Free">Free</p>
+                    <input class="check" type="checkbox" id="like-toggle-1" />
+                    <label class="container" for="like-toggle-1">
+                        <i class="fa-regular fa-heart icon inactive"></i>
+                        <i class="fa-solid fa-heart icon active"></i>
+                    </label>
+                </div>
+                <a href="###"><button class="fix-btn">Fix event</button></a>
+                <button class="delete-btn">Delete event</button>
+            </article>
+
+            <article class="event-card">
+                <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
+                <section class="bicheesuud">
+                    <h3>Event Name</h3>
+                    <p>Data : 2024-10-5 Time:11:00 pm</p>
+                    <p>Locaiotn:Улаанбаатар ХУД 15-байр</p>
+                    <p>decsription: tailbar</p>
+                </section>
+                <div class="Love">
+                    <p class="Free">Free</p>
+                    <input class="check" type="checkbox" id="like-toggle-2" />
+                    <label class="container" for="like-toggle-2">
+                        <i class="fa-regular fa-heart icon inactive"></i>
+                        <i class="fa-solid fa-heart icon active"></i>
+                    </label>
+                </div>
+                <a href="###"><button class="fix-btn">Fix event</button></a>
+                <button class="delete-btn">Delete event</button>
+            </article>
+
+            <article class="event-card">
+                <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
+                <section class="bicheesuud">
+                    <h3>Event Name</h3>
+                    <p>Data : 2024-10-5 Time:11:00 pm</p>
+                    <p>Locaiotn:Улаанбаатар ХУД 15-байр</p>
+                    <p>decsription: tailbar</p>
+                </section>
+                <div class="Love">
+                    <p class="Free">Free</p>
+                    <input class="check" type="checkbox" id="like-toggle-3" />
+                    <label class="container" for="like-toggle-3">
+                        <i class="fa-regular fa-heart icon inactive"></i>
+                        <i class="fa-solid fa-heart icon active"></i>
+                    </label>
+                </div>
+                <a href="###"><button class="fix-btn">Fix event</button></a>
+                <button class="delete-btn">Delete event</button>
+            </article>
+
+            <article class="event-card">
+                <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
+                <section class="bicheesuud">
+                    <h3>Event Name</h3>
+                    <p>Data : 2024-10-5 Time:11:00 pm</p>
+                    <p>Locaiotn:Улаанбаатар ХУД 15-байр</p>
+                    <p>decsription: tailbar</p>
+                </section>
+                <div class="Love">
+                    <p class="Free">Free</p>
+                    <input class="check" type="checkbox" id="like-toggle-4" />
+                    <label class="container" for="like-toggle-4">
+                        <i class="fa-regular fa-heart icon inactive"></i>
+                        <i class="fa-solid fa-heart icon active"></i>
+                    </label>
+                </div>
+                <a href="###"><button class="fix-btn">Fix event</button></a>
+                <button class="delete-btn">Delete event</button>
+            </article>
+
+            <article class="event-card">
+                <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
+                <section class="bicheesuud">
+                    <h3>Event Name</h3>
+                    <p>Data : 2024-10-5 Time:11:00 pm</p>
+                    <p>Locaiotn:Улаанбаатар ХУД 15-байр</p>
+                    <p>decsription: tailbar</p>
+                </section>
+                <div class="Love">
+                    <p class="Free">Free</p>
+                    <input class="check" type="checkbox" id="like-toggle-5" />
+                    <label class="container" for="like-toggle-5">
+                        <i class="fa-regular fa-heart icon inactive"></i>
+                        <i class="fa-solid fa-heart icon active"></i>
+                    </label>
+                </div>
+                <a href="###"><button class="fix-btn">Fix event</button></a>
+                <button class="delete-btn">Delete event</button>
+            </article>
+
+
+            
+
+
+        </section>
+
+
+    </section>
+
 </body>
 
 </html>

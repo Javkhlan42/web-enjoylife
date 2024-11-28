@@ -1,134 +1,264 @@
-main {
-    display: flex;
-    gap: 30px;
-    padding: 30px;
+
+:root{
+  --top-size:5rem;
+  --font-size:35px;
+  --grid-size:1fr;
+  --button-w:130px;
+  --button-h:50px;
+  --button-r:10px;
+  --padding:31.25rem;
+  --margin:1rem;
+  --back-r:8px;
+  --urd:60px;
 }
 
-.user-info,
-.event-info {
-    flex: 1;
-    background-color: #fff;
-    padding: 5px 30px 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-.user-info h2,
-.event-info h2 {
-    margin-bottom: 20px;
-    color: #333;
+.body{
+    padding-top:var(--top-size);
+    background-color: #fefefe;
 }
 
-.form-group {
-    margin-bottom: 15px;
-    display: inline;
+
+/*MY event bolon Button heseg*/
+
+.Event {
+    padding: var(--top-size);
+    display: grid;
+    grid-template-columns: var(--grid-size) var(--grid-size);
 }
 
-.form-group label {
-    display: inline;
-    margin-bottom: 5px;
-    font-weight: bold;
+.Event h1{
+    font-size:var(--font-size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;  /*MY EVENTS ugiig grid dotor bairluulah*/
 }
 
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.Event button {
+    cursor: pointer; /*buttun deer cursor ochod uurchlugddug*/
+    width: var(--button-w);
+    height: var(--button-h);
+    border-radius: var(--button-r);
+    border: none; /*button hureenii har ungiig arilgah*/
+    margin-left: var(--padding); /*button zuun talruu bairluulsan*/
+    color: #ffffff; /*ugnii ungu*/
+    background-color: #a3adfe;
+    transition: 0.3s;
 }
 
-.no-events {
-    text-align: center;
-    color: #666;
-}
-
-.no-events img {
-    margin-top: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Footer хэсэг */
-footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-links a {
-    margin-right: 20px;
-    color: #adb5bd;
-    text-decoration: none;
-}
-
-.event-cta button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+.Event button:hover{
     cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #808fff;
+    transition: 0.3s;
 }
 
-.event-cta button.create-event-btn {
-    background-color: #ff3e3e;
-    margin-left: 10px;
+.Event button {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.event-cta button:hover {
-    background-color: #218838;
+
+/*event design heseg*/
+.baraanuud {
+    display: grid;
+    grid-template-columns: var(--grid-size) var(--grid-size) var(--grid-size) var(--grid-size);
+    gap: var(--button-h) 10px; /* var muriin zai , 10 ni Багануудын хоорондын зай */
+    width: 100%; /* Эцэг элементэд тохируулсан өргөн */
+    margin: 0px 30px;
+    padding: 20px 40px;
 }
 
-/* Зураг стиль */
-.banner-zurag {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
-    transition: transform 0.2s, box-shadow 0.2s;
+.event-card{
+    max-width: 270px; /* Өргөнд дээд хэмжээ тогтоох */
+    height: 400px;
+    background-color: #fefefe;
+    border-radius: var(--back-r); /*baraanii durwuljin irmeggui bolgoh*/
+    overflow:hidden; /*border-radius tai hamt hereglewel zohistoi ba zuragnii iluu hesgiig nuuj, iluu tsewehen haragduuldag*/
+    transition: 0.4s;  
+    position: relative;
+    width: 100%;
 }
 
-.banner-zurag:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+.event-card:hover{
+    cursor:pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
 }
 
-.logo {
-    text-align: center;
-    /* Логоны div-ийг төвлөрүүлэх */
-    margin: 0px 0;
-    /* Дээд болон доод талаас зай өгөх */
+.event-card img{
+    width:100%;
+    height: 40%;
 }
 
-.logo img {
-    width: 50px;
-    /* Логоны өргөнийг тохируулах */
-    height: auto;
-    /* Зурагны харьцааг хадгалах */
-    max-width: 100%;
-    /* Хэмжээ нь дэлгэцийн өргөнөөс давахгүй байх */
-    display: inline-block;
-    /* Зургийг inline-block байдлаар харуулах */
+.bicheesuud {
+    padding: 0 10px;
 }
 
-.event-info img {
-    padding: 0.5em;
-    width: 15em;
-    height: auto;
-    opacity: 0.5;
-    /* Бага зэрэг тунгалаг болгоно */
-    transition: transform 0.3s, opacity 0.3s;
-    /* Хөдөлгөөн ба тунгалаг байдалд шилжилт нэмэх */
+
+/* Love Button */
+.Love{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding-right: 15px;
+    cursor: pointer;
 }
 
-.no-events img:hover {  
-    transform: scale(1.1);
-    /* Хулганаар дээр нь hover хийхэд 10% томруулна */
-    opacity: 1;
-    /* Тунгалаг байдлыг бууруулна */
+.Love p{
+    padding: 0 10px;
 }
+
+.check[type="checkbox"] {
+    display: none; /*checkbox durwuljin nudiig haragduulahgui bolon*/
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease-in-out /*easein ni ehende udaan tugsgulruuge hurdan boloh*/;
+    color: #666; /*icon zurhnii huree ni saaral*/
+}
+
+.icon.inactive {
+    display: inline-block;/*neg murund bairluulah hujuu tald ni zeregtsee*/
+}
+
+.icon.active {
+    display: none;
+    color: #f52121;
+}
+
+.check[type="checkbox"]:checked + .container .icon.inactive {  /*check darwal container dotor icon songono(icon.inactive songojiga)  */
+    display: none; /*none ni icon.inactive dusaiig haruulahgui bolgojiga*/
+}
+
+.check[type="checkbox"]:checked + .container .icon.active { /*click hiih buyu check deer darsan tohioldold .container roos .icon.active ruu shiljuuleh*/
+    display: inline-block;  /*ene ni 2 neg murund bairluulah ba , baihgui bol check darwal shine murund shiljin*/ 
+}
+
+
+/*fix button --------------*/
+
+.fix-btn {
+    position: absolute;
+    bottom: 0;
+    right: -50%; /* Эхэндээ зүүн талд далд байрлалд байна */
+    width: 50%;
+    background: #95a0ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: none;
+    transition: right 0.3s ease, background-color 0.3s ease;
+}
+
+.event-card:hover .fix-btn {
+    right: 0; /* Hover үед зүүнээс гарч ирнэ */
+    bottom: 0;/*dood taldaa yg naaldaj taarah*/
+}
+
+.event-card .fix-btn {
+    right: -50%;
+    transition: right 0.3s ease-out; /* Удаанаар буцах */
+
+}
+
+
+.fix-btn:hover {
+    background-color: #6a7bf9;
+}
+
+/*delete button---------------------*/
+
+.delete-btn {
+    position: absolute;
+    bottom: 0;
+    left: -50%; /* Эхэндээ баруун талд далд байрлалд байна */
+    width: 50%;
+    background: #95a0ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: none;
+    transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.event-card:hover .delete-btn {
+    left: 0; /* Hover үед баруунаас гарч ирнэ */
+    bottom: 0;/*dood taldaa yg naaldaj taarah*/
+}
+
+
+.delete-btn:hover {
+    background-color: #6a7bf9;
+}
+
+.event-card .delete-btn{
+    left: -50%;
+}
+
+
+@media (max-width: 768px) {
+    :root {
+        --font-size: 25px;
+        --grid-size: 1fr;
+        --button-w: 100px;
+        --button-h: 40px;
+        --padding: 1rem;
+    }
+
+    .body {
+        padding-top: var(--padding);
+    }
+
+    .Event {
+        padding: var(--padding);
+        grid-template-columns: 1fr; /* 1 багана болгоно */
+        gap: 1rem; /* Зай нэмнэ */
+    }
+
+    .Event h1 {
+        font-size: var(--font-size);
+        text-align: center; /* Гар утсанд төвлөрүүлэх */
+    }
+
+    .Event button {
+        margin: 0 auto; /* Төвд байрлуулна */
+        display: block;
+        width: 80%; /* Урт нь дэлгэцийн өргөний 80% */
+    }
+
+    .baraanuud {
+        grid-template-columns: 1fr 1fr; /* 2 багана болгоно */
+        gap: 1rem; /* Багануудад тохирох зай нэмнэ */
+        margin: var(--padding);
+        padding: 0;
+    }
+
+    .event-card {
+        max-width: 100%; /* Эцэг элементэд тохируулах */
+    }
+
+    .Love {
+        grid-template-columns: 1fr; /* 1 багана болгоно */
+        padding: 0;
+    }
+
+    .fix-btn, 
+    .delete-btn {
+        font-size: 14px; /* Үсгийн хэмжээг багасгана */
+        width: 100%; /* Дэлгэцийн өргөнийг эзлүүлэх */
+    }
+}
+
+
+
+
+
+
+
