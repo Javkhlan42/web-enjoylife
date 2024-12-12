@@ -20,7 +20,8 @@
 
     <!-- <script type="module" src="app.js" defer></script> -->
 
-
+    <script type="module" src="component/event-productlist.js"></script>
+    <script type="module" src="component/event-shoppingcart.js"></script>
 </head>
 
 <body>
@@ -43,9 +44,10 @@
         </form>
         <nav class="navbar">
             <ul>
-                <li><i class="fa-solid fa-cart-shopping"></i>
+                <li><event-shoppingcart color="#f0f0f0"></event-shoppingcart></li>
+                <!-- <li><i class="fa-solid fa-cart-shopping"></i>
                     <a href="#" class="menu-item">Joined</a>
-                </li>
+                </li> -->
                 <li><i class="fa-solid fa-plus"></i>
                     <a href="#" class="menu-item">Create an event</a>
 
@@ -212,6 +214,23 @@
 
         <section class="baraanuud">
 
+            <style>
+                :root {
+                    --default-border-radius: 10px;
+                }
+            
+                .event-product {
+                    border: 1px solid gray;
+                    border-radius: var(--default-border-radius);
+                    overflow: hidden;
+                    min-width: 30ch;
+                    width: min-content;
+                }
+            </style>
+            <!-- <event-shoppingcart color="#000"></event-shoppingcart> -->
+            <event-productlist direction="column"></event-productlist>
+            
+            
             <a href="###">
                 <article class="event-card">
                     <img src="https://picsum.photos/id/1/200/150" alt="user photo" class="event-image">
@@ -241,7 +260,7 @@
 
 
 
-    <script src="home.js"></script>
+    <!-- <script src="home.js"></script> -->
 
 </body>
 

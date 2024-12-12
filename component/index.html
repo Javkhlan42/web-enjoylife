@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="event-productlist.js"></script>
+    <script type="module" src="event-shoppingcart.js"></script>
+    <style>
+        :root {
+            --default-border-radius: 10px;
+        }
+    
+        .event-product {
+            border: 1px solid gray;
+            border-radius: var(--default-border-radius);
+            overflow: hidden;
+            min-width: 30ch;
+            width: min-content;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="product-list">
+        <event-product></event-product>
+        <event-product></event-product>
+        <event-product></event-product>
+    </div> -->
+    <event-shoppingcart color="#000"></event-shoppingcart>
+    <event-productlist direction="column"></event-productlist>
+</body>
+</html>

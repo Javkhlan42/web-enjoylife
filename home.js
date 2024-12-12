@@ -1,13 +1,40 @@
-// Fetch the JSON data
-fetch('data.json')
-    .then(response => response.json())
+fetch('https://api.jsonbin.io/v3/b/67480827e41b4d34e45c13f4') 
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
-        const events = data["event-type"];
-        setupFilters(events); // events-ийг setupFilters рүү дамжуулах
-        applyURLFilters(events); // URL-ийн параметраар шүүх функц дуудах
+        const events = data.record["event-type"]; 
+        setupFilters(events);
+        populateProductList(events);
     })
     .catch(error => console.error('Error fetching JSON:', error));
 
+    function populateProductList(events) {
+        const productList = document.querySelector('gobi-productlist');
+    
+        // Events-ийн өгөгдлийг динамикаар нэмэх
+        ['online', 'offline'].forEach(type => {
+            const filteredEvents = events[type];
+            filteredEvents.forEach(category => {
+                Object.keys(category).forEach(cat => {
+                    category[cat].forEach(event => {
+                        const product = document.createElement('gobi-product');
+                        product.setAttribute('data-name', event.name);
+                        product.setAttribute('data-date', event.date);
+                        product.setAttribute('data-time', event.time);
+                        product.setAttribute('data-location', event.location);
+                        product.setAttribute('data-description', event.description);
+                        product.setAttribute('data-price', event.price);
+                        product.setAttribute('data-image', event.image || 'https://via.placeholder.com/200x150');
+                        productList.appendChild(product);
+                    });
+                });
+            });
+        });
+    }
 function setupFilters(events) {
     // Radio button 
     const radioButtons = document.querySelectorAll('input[name="eventType"]');
