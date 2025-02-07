@@ -1,3 +1,5 @@
+// <web-baraa id="8" name="Event Name" date="2024-10-5" time="11:00pm" decsription="tailbar" location="Улаанбаатар ХУД 15-байр" price="free" category="sport"></web-baraa>
+            //deerhiig home html <section class="baraanuud"> heseg dotor hiij ugnu 
 class Web extends HTMLElement {
   constructor() {
       super();
@@ -44,9 +46,7 @@ class Web extends HTMLElement {
       `;
   }
 
-  //localStorage зөвхөн string (текст) хадгалж чаддаг.
-  //JSON.stringify() ашиглан массивыг string болгон хөрвүүлнэ.
-  //JSON.parse() нь JSON (string форматтай өгөгдөл)-ийг JavaScript объект болгон хөрвүүлдэг.
+
 
   setupEventListeners() {
       const joinButton = this.querySelector(".negdeh-towch");
